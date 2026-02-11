@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-noto-sans-jp), system-ui, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: var(--font-sans);
+}
+
+html {
+  scroll-behavior: smooth;
+}
