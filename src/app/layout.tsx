@@ -9,9 +9,9 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "AI Adviser | AI導入・活用を現場からサポート",
+  title: "UNCHAIN | AI顧問 – DX・AI活用を一貫支援",
   description:
-    "御社のAI導入・活用を一気通貫でサポート。専任アドバイザーが現場に伺い、最適なAI戦略をご提案します。",
+    "検討から定着まで。月額制で企業のDX・AI活用をForbes掲載・松尾研究室出身代表が一貫して支援します。",
 };
 
 export default function RootLayout({
