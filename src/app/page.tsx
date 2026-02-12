@@ -80,86 +80,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== Problem → Solution (Numbered list + Image side by side) ===== */}
-      <section className="px-8 py-24">
-        <div className="grid gap-12 md:grid-cols-2">
-          {/* Left: Text */}
-          <div>
-            <h2 className="text-3xl font-bold tracking-tight text-black md:text-4xl">
-              AI導入でお悩みの企業に。
-              <br />
-              専任アドバイザーが現場から伴走。
-            </h2>
-            <div className="mt-12 space-y-10">
-              <div className="flex gap-6">
-                <span className="text-sm font-bold text-gray-400">1 /</span>
-                <div>
-                  <h3 className="font-bold text-black">
-                    現場に直接伺い、業務を理解する
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-gray-500">
-                    オフィスや現場にアドバイザーが直接訪問。画面越しでは見えない業務フローやボトルネックを、自分の目で確認します。
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <span className="text-sm font-bold text-gray-400">2 /</span>
-                <div>
-                  <h3 className="font-bold text-black">
-                    最適なAI活用プランを策定する
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-gray-500">
-                    御社の課題に合わせた優先順位付きのロードマップを作成。何から始めるべきかを明確にし、無駄のないAI投資を実現します。
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <span className="text-sm font-bold text-gray-400">3 /</span>
-                <div>
-                  <h3 className="font-bold text-black">
-                    導入から運用まで継続的にサポートする
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-gray-500">
-                    一人の専任アドバイザーが責任をもって伴走。社内にAI人材がいなくても、確実にAI活用を前に進めます。
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Right: Image / Video placeholder */}
-          <div className="flex items-start justify-end">
-            <div className="relative w-full overflow-hidden rounded-sm bg-gray-900">
-              <div className="aspect-[4/3]">
-                <Image
-                  src="/meeting.jpg"
-                  alt="オンサイト訪問の様子"
-                  fill
-                  className="object-cover"
-                  unoptimized
-                />
-                {/* Fallback */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-900 p-8">
-                  <p className="text-center text-lg font-bold leading-relaxed text-white">
-                    現場訪問で
-                    <br />
-                    AI導入を加速
-                  </p>
-                  <p className="mt-3 text-center text-xs text-gray-400">
-                    オンサイトで業務を直接確認し
-                    <br />
-                    最適なAI活用をご提案
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== Features (Grid like "Why AIP Bootcamps Work") ===== */}
+      {/* ===== Features ===== */}
       <section id="features" className="border-t border-gray-200 px-8 py-24">
         <h2 className="text-3xl font-bold tracking-tight text-black md:text-4xl">
-          AI Adviserが選ばれる理由
+          3つの特徴
         </h2>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -196,12 +120,12 @@ export default function Home() {
               ロードマップ
             </p>
             <h3 className="mt-3 text-lg font-bold text-black">
-              AI導入計画を
+              「AIを使いたい」を
               <br />
-              明確に策定
+              具体的な計画に
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-gray-500">
-              「何から始めるべきか」を可視化。優先順位をつけた段階的な導入計画で、最短で成果を出せるロードマップを策定します。
+              漠然とした「AIを活用したい」というご要望を、御社の業務に合わせた具体的な段階的導入計画に落とし込みます。何を、いつ、どの順番で進めるかを明確にします。
             </p>
           </div>
 
@@ -333,7 +257,7 @@ export default function Home() {
                 <div className="py-6 text-center">
                   <p className="text-xs text-gray-500">オンライン会議</p>
                   <p className="mt-2">
-                    <span className="text-4xl font-bold text-black">8</span>
+                    <span className="text-4xl font-bold text-black">4</span>
                     <span className="ml-1 text-sm text-gray-500">回/月</span>
                   </p>
                 </div>
