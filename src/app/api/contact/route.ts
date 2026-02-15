@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
   const body = await req.json();
-  const { company, name, email, industry, employees, message } = body;
+  const { company, name, email, plan, industry, employees, message } = body;
 
   const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
   if (!webhookUrl) {
@@ -19,6 +19,7 @@ export async function POST(req: Request) {
       { name: "会社名", value: company || "未入力", inline: true },
       { name: "お名前", value: name || "未入力", inline: true },
       { name: "メールアドレス", value: email || "未入力" },
+      { name: "ご検討プラン", value: plan || "未選択", inline: true },
       { name: "業種", value: industry || "未選択", inline: true },
       { name: "従業員数", value: employees || "未選択", inline: true },
       { name: "ご相談内容", value: message || "未入力" },

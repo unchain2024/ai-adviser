@@ -195,6 +195,13 @@ const INDUSTRIES = [
   "その他",
 ];
 
+const PLANS = [
+  "アドバイザリー",
+  "エグゼクティブ",
+  "エンタープライズ",
+  "未定",
+];
+
 const EMPLOYEE_COUNTS = [
   "1〜50名",
   "51〜100名",
@@ -211,6 +218,7 @@ export default function Home() {
   const [emailError, setEmailError] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState("");
 
   return (
     <div className="min-h-screen bg-white font-sans">
@@ -500,12 +508,15 @@ export default function Home() {
                 <p className="mt-auto pt-6 text-xs text-gray-400">
                   「まずは方向性を整理したい」企業向けの戦略設計プラン
                 </p>
-                <a
-                  href="#contact"
-                  className="mt-6 block rounded border border-black py-3 text-center text-sm font-medium text-black transition hover:bg-black hover:text-white"
+                <button
+                  onClick={() => {
+                    setSelectedPlan("アドバイザリー");
+                    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className="mt-6 block w-full rounded border border-black py-3 text-center text-sm font-medium text-black transition hover:bg-black hover:text-white"
                 >
                   お問い合わせ
-                </a>
+                </button>
               </div>
             </div>
 
@@ -560,12 +571,15 @@ export default function Home() {
                 <p className="mt-auto pt-6 text-xs text-gray-400">
                   戦略設計に加え、実装フェーズまで踏み込む実行型プラン
                 </p>
-                <a
-                  href="#contact"
-                  className="mt-6 block rounded border border-black py-3 text-center text-sm font-medium text-black transition hover:bg-black hover:text-white"
+                <button
+                  onClick={() => {
+                    setSelectedPlan("エグゼクティブ");
+                    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className="mt-6 block w-full rounded border border-black py-3 text-center text-sm font-medium text-black transition hover:bg-black hover:text-white"
                 >
                   お問い合わせ
-                </a>
+                </button>
               </div>
             </div>
 
@@ -607,12 +621,15 @@ export default function Home() {
                 <p className="mt-auto pt-6 text-xs text-gray-400">
                   実質的な「外部AI責任者」体制の構築
                 </p>
-                <a
-                  href="#contact"
-                  className="mt-6 block rounded border border-black py-3 text-center text-sm font-medium text-black transition hover:bg-black hover:text-white"
+                <button
+                  onClick={() => {
+                    setSelectedPlan("エンタープライズ");
+                    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className="mt-6 block w-full rounded border border-black py-3 text-center text-sm font-medium text-black transition hover:bg-black hover:text-white"
                 >
                   お問い合わせ
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -826,6 +843,7 @@ export default function Home() {
                     company: fd.get("company"),
                     name: fd.get("name"),
                     email,
+                    plan: fd.get("plan"),
                     industry: fd.get("industry"),
                     employees: fd.get("employees"),
                     message: fd.get("message"),
@@ -884,6 +902,26 @@ export default function Home() {
               {emailError && (
                 <p className="mt-1 text-xs text-red-500">{emailError}</p>
               )}
+            </div>
+
+            {/* Plan */}
+            <div>
+              <label className="block text-sm font-medium text-black">
+                ご検討中のプラン
+              </label>
+              <select
+                name="plan"
+                className="mt-1 w-full rounded border border-gray-300 px-4 py-3 text-sm text-gray-600 outline-none transition focus:border-black"
+                value={selectedPlan}
+                onChange={(e) => setSelectedPlan(e.target.value)}
+              >
+                <option value="">選択してください</option>
+                {PLANS.map((p) => (
+                  <option key={p} value={p}>
+                    {p}
+                  </option>
+                ))}
+              </select>
             </div>
 
             {/* Industry + Employee count */}
