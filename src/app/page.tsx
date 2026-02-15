@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 /* ─── free-mail domain blocklist (subset) ─── */
 const FREE_DOMAINS = [
@@ -33,10 +33,11 @@ const NAV_LINKS = [
 ];
 
 const PAIN_POINTS = [
+  { title: "始められない", desc: "Google WorkspaceやAWSへの移行すら手つかずのまま" },
   { title: "選べない", desc: "どのAIツールを選ぶべきかわからない" },
   { title: "組み込めない", desc: "業務にどう組み込めばいいかわからない" },
   { title: "止まる", desc: "PoC止まりで実運用に進まない" },
-  { title: "担えない", desc: "社内にAIを判断・推進できる責任者がいない" },
+  { title: "担えない", desc: "社内にDX・AIを判断・推進できる責任者がいない" },
 ];
 
 const TIMELINE = [
@@ -63,6 +64,10 @@ const TIMELINE = [
 ];
 
 const CORE_SERVICES = [
+  {
+    title: "DX基盤の構築",
+    desc: "Google Workspace・AWS等への移行から社内インフラ整備まで",
+  },
   {
     title: "AI活用テーマの整理",
     desc: "経営視点・現場視点での優先順位付け",
@@ -109,6 +114,10 @@ const COMPARISON = [
   {
     them: "プロジェクト単発",
     us: "継続的伴走と人材育成",
+  },
+  {
+    them: "AI導入のみに特化",
+    us: "Google Workspace移行などDX基盤構築からAI活用まで一貫支援",
   },
 ];
 
@@ -200,6 +209,8 @@ const EMPLOYEE_COUNTS = [
 export default function Home() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [emailError, setEmailError] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   return (
     <div className="min-h-screen bg-white font-sans">
@@ -286,30 +297,35 @@ export default function Home() {
 
       {/* ═══════ SECTION 1: HERO ═══════ */}
       <section className="mx-auto max-w-7xl px-6 py-24 md:py-36">
-        <h1 className="max-w-3xl text-4xl leading-snug font-bold tracking-tight text-black md:text-6xl md:leading-tight">
-          社内のDX・AI活用、
-          <br />
-          丸投げしていませんか？
-        </h1>
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-gray-600 md:text-xl">
-          検討から定着まで。月額制で企業のDX・AI活用を
-          <br className="hidden md:block" />
-          Forbes掲載・松尾研究室出身代表が一貫して支援します。
-        </p>
-        <div className="mt-10 flex flex-wrap items-center gap-4">
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 rounded bg-black px-7 py-3.5 text-sm font-medium text-white transition hover:bg-gray-800"
-          >
-            無料相談を予約する
-            <ArrowRight />
-          </a>
-          <a
-            href="#services"
-            className="text-sm font-medium text-gray-600 underline underline-offset-4 transition hover:text-black"
-          >
-            サービス詳細を見る
-          </a>
+        <div className="grid items-center gap-12 lg:grid-cols-2">
+          <div>
+            <h1 className="max-w-3xl text-4xl leading-snug font-bold tracking-tight text-black md:text-6xl md:leading-tight">
+              DX・AI推進、
+              <br />
+              止まっていませんか？
+            </h1>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-gray-600 md:text-xl">
+              検討から定着まで。プロの判断軸で、御社のDX・AI活用を
+              <br className="hidden md:block" />
+              一貫して支援します。
+            </p>
+            <div className="mt-10 flex flex-wrap items-center gap-4">
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 rounded bg-black px-7 py-3.5 text-sm font-medium text-white transition hover:bg-gray-800"
+              >
+                無料相談を予約する
+                <ArrowRight />
+              </a>
+              <a
+                href="#services"
+                className="text-sm font-medium text-gray-600 underline underline-offset-4 transition hover:text-black"
+              >
+                サービス詳細を見る
+              </a>
+            </div>
+          </div>
+          <HeroSlideshow />
         </div>
       </section>
 
@@ -317,9 +333,9 @@ export default function Home() {
       <section className="border-t border-gray-200 bg-gray-50">
         <div className="mx-auto max-w-7xl px-6 py-24">
           <h2 className="text-center text-3xl font-bold tracking-tight text-black md:text-4xl">
-            なぜAI活用が進まないのか
+            なぜDX・AI活用が進まないのか
           </h2>
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
             {PAIN_POINTS.map((p) => (
               <div
                 key={p.title}
@@ -335,7 +351,7 @@ export default function Home() {
           <p className="mt-14 text-center text-base font-medium text-gray-700 md:text-lg">
             UNCHAINはこれらに対し、
             <span className="font-bold text-black">
-              実行できるAI顧問
+              実行できるDX・AI顧問
             </span>
             として機能します。
           </p>
@@ -354,7 +370,12 @@ export default function Home() {
           <div className="mt-16 grid gap-16 lg:grid-cols-2">
             {/* Profile */}
             <div>
-              <p className="text-sm font-medium tracking-wide text-gray-400 uppercase">
+              <img
+                src="/founder.webp"
+                alt="朴 善優"
+                className="h-32 w-32 rounded-full object-cover"
+              />
+              <p className="mt-6 text-sm font-medium tracking-wide text-gray-400 uppercase">
                 Founder
               </p>
               <h3 className="mt-3 text-2xl font-bold text-black">
@@ -395,7 +416,7 @@ export default function Home() {
       <section id="services" className="border-t border-gray-200 bg-gray-50">
         <div className="mx-auto max-w-7xl px-6 py-24">
           <h2 className="text-center text-3xl font-bold tracking-tight text-black md:text-4xl">
-            AIのことは、UNCHAINに聞けばいい
+            DX・AIのことは、UNCHAINに聞けばいい
           </h2>
 
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -416,7 +437,7 @@ export default function Home() {
           </div>
 
           <p className="mx-auto mt-14 max-w-xl text-center text-base font-medium text-gray-700">
-            「AIのことはUNCHAINに聞けばいい」状態をつくることが、私たちのゴールです。
+            「DX・AIのことはUNCHAINに聞けばいい」状態をつくることが、私たちのゴールです。
           </p>
         </div>
       </section>
@@ -430,7 +451,7 @@ export default function Home() {
           <p className="mx-auto mt-4 max-w-2xl text-center text-sm leading-relaxed text-gray-500">
             UNCHAINは、月額顧問契約を基本とし、継続的な伴走支援を提供します。
             <br />
-            プロジェクト単発ではなく、中長期的なAI活用パートナーとして機能します。
+            プロジェクト単発ではなく、中長期的なDX・AI活用パートナーとして機能します。
           </p>
 
           {/* 3 Plans */}
@@ -479,6 +500,12 @@ export default function Home() {
                 <p className="mt-auto pt-6 text-xs text-gray-400">
                   「まずは方向性を整理したい」企業向けの戦略設計プラン
                 </p>
+                <a
+                  href="#contact"
+                  className="mt-6 block rounded border border-black py-3 text-center text-sm font-medium text-black transition hover:bg-black hover:text-white"
+                >
+                  お問い合わせ
+                </a>
               </div>
             </div>
 
@@ -533,6 +560,12 @@ export default function Home() {
                 <p className="mt-auto pt-6 text-xs text-gray-400">
                   戦略設計に加え、実装フェーズまで踏み込む実行型プラン
                 </p>
+                <a
+                  href="#contact"
+                  className="mt-6 block rounded border border-black py-3 text-center text-sm font-medium text-black transition hover:bg-black hover:text-white"
+                >
+                  お問い合わせ
+                </a>
               </div>
             </div>
 
@@ -574,6 +607,12 @@ export default function Home() {
                 <p className="mt-auto pt-6 text-xs text-gray-400">
                   実質的な「外部AI責任者」体制の構築
                 </p>
+                <a
+                  href="#contact"
+                  className="mt-6 block rounded border border-black py-3 text-center text-sm font-medium text-black transition hover:bg-black hover:text-white"
+                >
+                  お問い合わせ
+                </a>
               </div>
             </div>
           </div>
@@ -726,7 +765,7 @@ export default function Home() {
             {[
               {
                 step: "Step 1",
-                title: "AI顧問としての継続的伴走",
+                title: "DX・AI顧問としての継続的伴走",
               },
               {
                 step: "Step 2",
@@ -759,7 +798,7 @@ export default function Home() {
       <section id="contact" className="border-t border-gray-200">
         <div className="mx-auto max-w-3xl px-6 py-24">
           <h2 className="text-center text-3xl font-bold tracking-tight text-black md:text-4xl">
-            まずは、AI活用の現状を話しませんか？
+            まずは、DX・AI活用の現状を話しませんか？
           </h2>
           <p className="mt-4 text-center text-sm text-gray-500">
             初回相談は無料です。経営層・現場担当者の両方でのご参加をお勧めします。
@@ -767,7 +806,7 @@ export default function Home() {
 
           <form
             className="mt-12 space-y-6"
-            onSubmit={(e) => {
+            onSubmit={async (e) => {
               e.preventDefault();
               const fd = new FormData(e.currentTarget);
               const email = fd.get("email") as string;
@@ -778,8 +817,27 @@ export default function Home() {
                 return;
               }
               setEmailError("");
-              // TODO: wire up form submission
-              alert("送信しました。担当者よりご連絡いたします。");
+              setSubmitting(true);
+              try {
+                const res = await fetch("/api/contact", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({
+                    company: fd.get("company"),
+                    name: fd.get("name"),
+                    email,
+                    industry: fd.get("industry"),
+                    employees: fd.get("employees"),
+                    message: fd.get("message"),
+                  }),
+                });
+                if (!res.ok) throw new Error();
+                setSubmitted(true);
+              } catch {
+                alert("送信に失敗しました。時間をおいて再度お試しください。");
+              } finally {
+                setSubmitting(false);
+              }
             }}
           >
             {/* Company */}
@@ -885,11 +943,23 @@ export default function Home() {
 
             <button
               type="submit"
-              className="w-full rounded bg-black py-4 text-sm font-medium text-white transition hover:bg-gray-800"
+              disabled={submitting}
+              className="w-full rounded bg-black py-4 text-sm font-medium text-white transition hover:bg-gray-800 disabled:opacity-50"
             >
-              無料相談を申し込む
+              {submitting ? "送信中..." : "無料相談を申し込む"}
             </button>
           </form>
+
+          {submitted && (
+            <div className="mt-8 rounded border border-gray-200 bg-gray-50 p-6 text-center">
+              <p className="text-base font-bold text-black">
+                お問い合わせありがとうございます
+              </p>
+              <p className="mt-2 text-sm text-gray-600">
+                担当者より2営業日以内にご連絡いたします。
+              </p>
+            </div>
+          )}
 
           <p className="mt-6 text-center text-xs text-gray-400">
             メールでのお問い合わせは{" "}
@@ -922,6 +992,34 @@ export default function Home() {
 }
 
 /* ─── tiny icon components ─── */
+
+const HERO_IMAGES = ["/hero-1.webp", "/hero-2.webp"];
+
+function HeroSlideshow() {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % HERO_IMAGES.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="relative aspect-[4/3] overflow-hidden rounded">
+      {HERO_IMAGES.map((src, i) => (
+        <img
+          key={src}
+          src={src}
+          alt=""
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${
+            i === current ? "opacity-100" : "opacity-0"
+          }`}
+        />
+      ))}
+    </div>
+  );
+}
 
 function ArrowRight() {
   return (
