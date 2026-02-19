@@ -152,18 +152,6 @@ const TESTIMONIALS = [
       "単なるツール導入ではなく、研究データをどう安全かつ効率的に管理すべきかという設計段階から相談できました。学術機関特有の複雑な要件を、技術と実務の両面から解決してくれました。",
   },
   {
-    attr: "子会社・新規事業担当",
-    org: "国内最大手ゼネコン",
-    quote:
-      "新規事業のスピード感を止めることなく、業界標準に依存しない独自の仕組みを提案してくれました。『技術的に可能か、ビジネスとして有利か』を即断即決してくれるため、開発の意思決定が劇的に早まりました。",
-  },
-  {
-    attr: "DX推進担当",
-    org: "世界最大手ヘルスケア企業",
-    quote:
-      "グローバル企業ゆえの厳しいコンプライアンス要件の中で、『どこまでAIに任せるべきか』というガバナンス視点でのアドバイスが非常に助かりました。リスクを回避しながら現場業務に落とし込む設計力は流石です。",
-  },
-  {
     attr: "経営企画室",
     org: "創業90年 アパレル製造",
     quote:
@@ -494,10 +482,6 @@ export default function Home() {
                   </li>
                   <li className="flex items-start gap-2">
                     <Check />
-                    オンライン / オフライン対応
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Check />
                     チャット相談
                   </li>
                   <li className="flex items-start gap-2">
@@ -550,10 +534,6 @@ export default function Home() {
                   <li className="flex items-start gap-2">
                     <Check />
                     月720分までの稼働
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Check />
-                    オンライン / オフライン対応
                   </li>
                   <li className="flex items-start gap-2">
                     <Check />
@@ -634,26 +614,12 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Time charge + notes */}
-          <div className="mx-auto mt-16 max-w-3xl space-y-8">
-            <div className="rounded border border-gray-200 bg-gray-50 p-6">
-              <h4 className="text-sm font-bold text-black">
-                タイムチャージ制度
-              </h4>
-              <p className="mt-2 text-sm leading-relaxed text-gray-600">
-                顧問プランの範囲を超える具体的な実装支援、または単発でのご依頼については、時間単位での利用が可能です。
-              </p>
-              <ul className="mt-3 space-y-1 text-sm text-gray-500">
-                <li>原則6分単位で計算（6分未満切上げ）</li>
-                <li>
-                  設定したAI顧問の時間あたり報酬単価 × 稼働時間
-                </li>
-                <li>
-                  オフラインMTG等の移動時間は上記金額の50%にて計算
-                </li>
-              </ul>
-            </div>
+          {/* Notes */}
+          <p className="mx-auto mt-8 max-w-2xl text-center text-xs leading-relaxed text-gray-400">
+            ※ 上記は顧問契約の料金です。顧問範囲外の実装支援・開発等については別途費用が発生します。
+          </p>
 
+          <div className="mx-auto mt-16 max-w-3xl space-y-8">
             <div className="grid gap-6 sm:grid-cols-3">
               {[
                 {
