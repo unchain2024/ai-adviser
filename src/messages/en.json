@@ -1,0 +1,378 @@
+{
+  "meta": {
+    "title": "UNCHAIN AI Advisory | Your outsourced AI officer for DX & AI",
+    "description": "A trusted AI advisor with research, business, and deployment experience. From DX foundations to AI adoption and governance. Tokyo based."
+  },
+  "nav": {
+    "services": "Services",
+    "pricing": "Pricing",
+    "cases": "Case Studies",
+    "founder": "Founder",
+    "news": "News",
+    "cta": "Book a Call",
+    "brand": "UNCHAIN",
+    "subtitle": "AI顧問 / AI ADVISER"
+  },
+  "hero": {
+    "eyebrow": "AI ADVISORY — TOKYO",
+    "title1": "Is your DX and AI",
+    "title2": "initiative stuck?",
+    "subtitle": "From evaluation to adoption. A trusted AI advisor who judges on three axes — technology, business, and risk — walks with your team end to end.",
+    "cta": "Book a free consultation",
+    "ctaSecondary": "See what we do →",
+    "trust": "SoftBank Academia  ·  UTokyo Matsuo Lab  ·  Featured in Forbes  ·  US-Japan Council 2025"
+  },
+  "problem": {
+    "title": "Why DX and AI initiatives stall",
+    "items": [
+      { "label": "Can't start", "desc": "Migration to Google Workspace or AWS remains untouched" },
+      { "label": "Can't choose", "desc": "No clarity on which AI tools to adopt" },
+      { "label": "Can't integrate", "desc": "No idea how to embed AI into daily workflows" },
+      { "label": "Stuck at PoC", "desc": "Proof-of-concept never reaches production" },
+      { "label": "No owner", "desc": "No internal leader who can judge and drive DX/AI" }
+    ],
+    "closing": "UNCHAIN functions as an actionable DX/AI advisor against all of these."
+  },
+  "painPersonas": {
+    "title": "Do any of these sound familiar?",
+    "items": [
+      "Want to boost productivity with AI but don't know where to start",
+      "Tools were deployed but never took root — now gathering dust",
+      "Need to safely combine proprietary data with AI",
+      "Want to know exactly what competitors are doing with AI",
+      "PoC is done but can't move to production",
+      "No one internally can evaluate and champion AI initiatives"
+    ]
+  },
+  "pillars": {
+    "title": "Three pillars of support",
+    "items": [
+      {
+        "name": "DX Foundation",
+        "subtitle": "Google Workspace, AWS, internal infrastructure",
+        "desc": "Set up cloud migration, authentication, and data foundations as prerequisites for AI to function."
+      },
+      {
+        "name": "AI Strategy & Implementation",
+        "subtitle": "Theme mapping → Tool selection → Workflow design → Implementation",
+        "desc": "From a vendor-neutral standpoint, design AI adoption priorities from business challenges and embed them into operations."
+      },
+      {
+        "name": "Governance & Ongoing Advisory",
+        "subtitle": "AI security, internal policies, talent development",
+        "desc": "Build safe, continuous operational frameworks based on Forbes-featured AI governance expertise."
+      }
+    ],
+    "stepsTitle": "7-step support process",
+    "steps": [
+      { "num": "01", "title": "DX foundation setup" },
+      { "num": "02", "title": "AI theme mapping" },
+      { "num": "03", "title": "Tool selection" },
+      { "num": "04", "title": "Workflow design" },
+      { "num": "05", "title": "Implementation support" },
+      { "num": "06", "title": "Governance build" },
+      { "num": "07", "title": "Continuous improvement" }
+    ]
+  },
+  "serviceFlow": {
+    "title": "Engagement flow",
+    "desc": "We start by carefully listening to your business model and operational realities, then chart a roadmap to resolution and walk with you through implementation and adoption.",
+    "stages": [
+      { "title": "Hearing", "desc": "Understand status from both management and field perspectives" },
+      { "title": "Problem mapping", "desc": "Align on priorities and ROI expectations" },
+      { "title": "Roadmap", "desc": "3–12 month execution plan" },
+      { "title": "Implementation", "desc": "Tool selection, design, operational planning" },
+      { "title": "Adoption", "desc": "Internal champion training, PDCA establishment" }
+    ]
+  },
+  "virtuousCycle": {
+    "title": "The virtuous cycle we install",
+    "desc": "By repeating business hearing → problem identification → AI implementation → adoption verification, we cultivate internal champions and build a permanent PDCA loop for productivity improvement.",
+    "center": "Internal champion enablement",
+    "nodes": [
+      "Business hearing",
+      "Problem identification",
+      "AI implementation",
+      "Adoption & validation"
+    ]
+  },
+  "whyChosen": {
+    "title": "Why UNCHAIN",
+    "intro": "UNCHAIN is neither proposals without implementation, nor one-size-fits-all tool provisioning. With research-backed AI technology, hands-on deployment experience, and AI governance expertise, we support your risk-free AI adoption.",
+    "reasons": [
+      {
+        "title": "Research, business, and deployment",
+        "desc": "A decision-making framework built on end-to-end experience from basic research to deployment."
+      },
+      {
+        "title": "Vendor-neutral",
+        "desc": "No tool sales agenda. We select optimal solutions based on technology, business fit, and future scalability."
+      },
+      {
+        "title": "Governance by default",
+        "desc": "Forbes-featured AI security expertise applied as standard to every engagement."
+      }
+    ]
+  },
+  "founder": {
+    "eyebrow": "FOUNDER",
+    "name": "Sonwoo Christian Park",
+    "nameEn": "Sonwoo Christian Park",
+    "titleLine": "UNCHAIN CEO",
+    "quote": "Not theory alone. Not the field alone.\nWhich is why I can judge — on the spot — whether something is technically feasible, commercially sound, and culturally fit for Japanese enterprises.",
+    "narrative": "Accepted into SoftBank Academia at 18, joining Masayoshi Son's next-generation leader program. Interned at the University of Tokyo Matsuo Lab CEO's office, co-founded Deepreneur (a Matsuo Lab AI startup), and conducted Forbes-featured AI security research as a Waseda University researcher. In 2025, spoke at the US-Japan Council annual conference. Drawing on experience spanning research, business, and policy, he provides an immediate decision-making framework as an AI advisor.",
+    "timeline": [
+      { "year": "2018", "org": "SoftBank Academia", "desc": "Next-generation leader program by Masayoshi Son. Accepted at age 18" },
+      { "year": "2020", "org": "UTokyo Matsuo Lab", "desc": "CEO's office intern. Engaged in Japan's top AI research" },
+      { "year": "2021", "org": "Deepreneur Co-founder", "desc": "Matsuo Lab AI startup" },
+      { "year": "2023", "org": "Waseda University Researcher", "desc": "AI security research, featured in Forbes" },
+      { "year": "2025", "org": "US-Japan Council Speaker", "desc": "International AI policy & business forum" }
+    ],
+    "logosCaption": "Institutions involved",
+    "logos": ["SoftBank", "UTokyo Matsuo Lab", "Waseda University", "Forbes", "US-Japan Council", "UC Berkeley"],
+    "sectionTitle": "Research, business, deployment — an AI advisor who has done all three."
+  },
+  "projectShowcase": {
+    "title": "Engagement examples",
+    "subtitle": "Shared within confidentiality bounds.",
+    "projects": [
+      {
+        "industry": "US Research Institution",
+        "solution": "Research data management × AI strategy design",
+        "desc": "Collaboration with UC Berkeley (IBI). Provided technical and operational support for complex academic data requirements — from secure cloud infrastructure design to AI adoption prioritization."
+      },
+      {
+        "industry": "Apparel Manufacturing (90-year company)",
+        "solution": "Legacy workflow preservation × AI priority design",
+        "desc": "For a 90-year-old company, respected existing workflows while identifying where AI would deliver the most impact. Achieved smooth adoption through partnership with corporate strategy."
+      },
+      {
+        "industry": "Optics & Brittle Materials",
+        "solution": "Factory system integration × Implementation design",
+        "desc": "Designed integration between existing factory systems used by craftsmen and modern AI. Delivered implementation blueprints by understanding field-level challenges that typical IT vendors cannot address."
+      }
+    ],
+    "contactLink": "→ Inquire for details"
+  },
+  "departments": {
+    "title": "Concrete use cases by department",
+    "items": [
+      {
+        "name": "Sales",
+        "cases": ["Automated company & competitor research", "Pre-meeting scenario generation", "Proposal draft generation", "Meeting notes & follow-up automation", "SFA auto-entry"]
+      },
+      {
+        "name": "Marketing",
+        "cases": ["Market research & persona generation", "Ad creative generation", "Article & report automation", "Data analysis & legal review"]
+      },
+      {
+        "name": "Customer Support",
+        "cases": ["Response quality standardization", "FAQ / complaint bot", "Training load reduction", "Order & shift analysis"]
+      },
+      {
+        "name": "PR",
+        "cases": ["Media list creation", "Press release generation", "Interview article generation", "Typo & prohibited expression check"]
+      },
+      {
+        "name": "Corporate Strategy",
+        "cases": ["Market & industry trend research", "SWOT / PEST / 4P analysis", "Earnings report creation", "Management analysis"]
+      },
+      {
+        "name": "HR",
+        "cases": ["Job posting creation", "Resume screening support", "Interview support", "Scout email generation"]
+      },
+      {
+        "name": "Back Office",
+        "cases": ["Internal inquiry reduction (policy / knowledge bot)", "Estimate creation support", "Data entry automation"]
+      }
+    ]
+  },
+  "comparison": {
+    "title": "UNCHAIN vs. typical AI consultancies",
+    "headerThem": "Typical AI consultants",
+    "headerUs": "UNCHAIN",
+    "rows": [
+      { "them": "Tool introductions only", "us": "Comprehensive technical, business, and risk assessment" },
+      { "them": "Recycled overseas case studies", "us": "Designs adapted to Japanese business practices" },
+      { "them": "Advice lacking implementation depth", "us": "Implementation design grounded in field realities" },
+      { "them": "Selling specific tools", "us": "Vendor-neutral optimal selection" },
+      { "them": "One-off projects", "us": "Continuous partnership and talent development" },
+      { "them": "AI adoption only", "us": "End-to-end support from DX foundation to AI utilization" }
+    ]
+  },
+  "pricing": {
+    "title": "Place your AI officer outside the company",
+    "subtitle": "UNCHAIN provides mid-to-long-term partnership support based on monthly advisory contracts. Not one-off projects — we function as your continuous DX/AI partner.",
+    "recommended": "RECOMMENDED",
+    "plans": [
+      {
+        "num": "01",
+        "name": "Advisory",
+        "price": "¥50,000",
+        "period": "/ mo",
+        "target": "Companies defining their AI direction",
+        "includes": [
+          "Up to 180 min/month",
+          "Chat consultation",
+          "AI trend & risk briefings"
+        ],
+        "closing": "A strategy design plan for companies looking to clarify their direction"
+      },
+      {
+        "num": "02",
+        "name": "Executive",
+        "price": "¥150,000",
+        "period": "/ mo",
+        "target": "Companies implementing AI and driving outcomes",
+        "includes": [
+          "Up to 720 min/month",
+          "Chat consultation",
+          "AI trend & risk briefings",
+          "Tool selection & design support"
+        ],
+        "closing": "An execution-focused plan that goes beyond strategy into implementation"
+      },
+      {
+        "num": "03",
+        "name": "Enterprise",
+        "price": "Contact Us",
+        "period": "",
+        "target": "Companies outsourcing their AI function entirely",
+        "includes": [
+          "Custom engagement design",
+          "Dedicated team & hours",
+          "Advanced governance & ops"
+        ],
+        "closing": "Building a de facto outsourced AI officer structure"
+      }
+    ],
+    "footnote": "* The above is advisory retainer pricing. Implementation and development work outside the advisory scope is quoted separately.",
+    "assurances": [
+      { "num": "01", "title": "Vendor Neutral", "desc": "No tool sales agenda. We only provide optimal selection." },
+      { "num": "02", "title": "Security First", "desc": "Forbes-featured AI governance expertise included as standard." },
+      { "num": "03", "title": "Enablement Included", "desc": "Internal AI champion training available as an option." }
+    ],
+    "cta": "Start with a free consultation",
+    "targetLabel": "For",
+    "includesLabel": "Includes",
+    "contactBtn": "Contact"
+  },
+  "testimonials": {
+    "title": "Clients on working with UNCHAIN",
+    "items": [
+      {
+        "attr": "Top US university research institution",
+        "org": "UC Berkeley (IBI)",
+        "quote": "Rather than simply deploying tools, we could consult from the design stage on how to safely and efficiently manage research data. They resolved complex requirements unique to academic institutions from both technical and operational angles."
+      },
+      {
+        "attr": "Corporate Strategy Office",
+        "org": "90-year-old apparel manufacturer",
+        "quote": "We had no AI experts internally and were lost on where to begin. UNCHAIN respected our 90-year-old workflows while clearly identifying priorities — 'AI-ify this area for maximum impact' — enabling smooth adoption."
+      },
+      {
+        "attr": "Plant Manager & Technical Lead",
+        "org": "Optics & brittle materials legacy manufacturer",
+        "quote": "Integrating existing systems used by craftsmen with cutting-edge AI is something most IT vendors can't relate to. They understood our messy field-level challenges and drew an 'implementation blueprint' for factory system integration."
+      },
+      {
+        "attr": "Head of Development",
+        "org": "Optical fusion camera venture",
+        "quote": "Hardware-AI integration is notoriously difficult, but with their R&D background serving as a technical sparring partner, we've been running from PoC to implementation at maximum speed."
+      }
+    ]
+  },
+  "ladder": {
+    "title": "Advisory is only the entry point",
+    "steps": [
+      { "step": "Step 1", "title": "Continuous partnership as DX/AI advisor" },
+      { "step": "Step 2", "title": "Executive-level AI decision-making partner" },
+      { "step": "Ultimate Goal", "title": "Long-term AI strategy co-creation" }
+    ],
+    "closing": "Advisory is the entry point for UNCHAIN to become the AI decision-making layer for Japanese enterprises."
+  },
+  "seminars": {
+    "title": "Seminars",
+    "viewAll": "View all →",
+    "statusOpen": "Open",
+    "webinar": "WEBINAR",
+    "onsite": "ON-SITE"
+  },
+  "news": {
+    "title": "News",
+    "viewAll": "View all →",
+    "press": "Press Release",
+    "coverage": "Press Coverage"
+  },
+  "contact": {
+    "title": "Tell us where you are today.",
+    "subtitle": "First consultation is free. We recommend both executive and operational representatives join.",
+    "fields": {
+      "company": "Company name",
+      "name": "Your name",
+      "email": "Email",
+      "role": "Role",
+      "plan": "Plan of interest",
+      "industry": "Industry",
+      "employees": "Company size",
+      "message": "Message",
+      "contactMethod": "Preferred contact method",
+      "selectPlaceholder": "Select..."
+    },
+    "plans": ["Advisory", "Executive", "Enterprise", "Undecided"],
+    "industries": ["Manufacturing", "Construction & Real Estate", "IT & Telecom", "Finance & Insurance", "Healthcare", "Retail", "Education & Research", "Services", "Other"],
+    "employeeCounts": ["1–50", "51–100", "101–300", "301–1,000", "1,001–5,000", "5,001+"],
+    "contactMethods": ["Email", "Phone", "Online meeting"],
+    "submit": "Submit request",
+    "submitting": "Submitting...",
+    "freeMailError": "Please use a corporate email address (free email not accepted)",
+    "submitError": "Submission failed. Please try again later.",
+    "successTitle": "Thank you for your inquiry",
+    "successDesc": "We will get back to you within 2 business days.",
+    "emailDirect": "For email inquiries:",
+    "responseSla": "Reply within 2 business days",
+    "office": "Tokyo",
+    "privacy": "Your information will be handled in accordance with our Privacy Policy.",
+    "placeholders": {
+      "company": "UNCHAIN Inc.",
+      "name": "Taro Yamada",
+      "email": "taro@example.co.jp",
+      "role": "Director, Corporate Strategy",
+      "message": "Tell us about your current AI usage and what you'd like to discuss"
+    }
+  },
+  "footer": {
+    "tagline": "AI顧問 / AI Advisory",
+    "copyright": "© 2025 UNCHAIN Inc.",
+    "company": {
+      "title": "Company",
+      "about": "About",
+      "founder": "Founder",
+      "news": "News",
+      "careers": "Careers"
+    },
+    "services": {
+      "title": "Services",
+      "advisory": "AI Advisory",
+      "dxFoundation": "DX Foundation",
+      "governance": "AI Governance",
+      "asguard": "ASGUARD",
+      "neuron": "NEURON"
+    },
+    "resources": {
+      "title": "Resources",
+      "cases": "Case Studies",
+      "seminars": "Seminars",
+      "blog": "Blog",
+      "download": "Download Materials"
+    },
+    "legal": {
+      "title": "Legal & Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms",
+      "security": "Security Policy",
+      "contact": "Contact"
+    },
+    "backedBy": "Backed by East Ventures, ANOBAKA  ·  Advised by Mark Ikeno, Allan Frank"
+  }
+}
