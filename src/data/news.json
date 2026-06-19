@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "date": "2025-03-15",
+    "category": "press",
+    "title": { "ja": "UNCHAIN、AI顧問サービスを正式リリース", "en": "UNCHAIN officially launches AI Advisory service" },
+    "url": "#"
+  },
+  {
+    "id": "2",
+    "date": "2025-02-20",
+    "category": "coverage",
+    "title": { "ja": "代表 朴善優、米日カウンシル2025年総会に登壇", "en": "CEO Sonwoo Park speaks at US-Japan Council 2025 Annual Conference" },
+    "url": "#"
+  },
+  {
+    "id": "3",
+    "date": "2024-11-10",
+    "category": "coverage",
+    "title": { "ja": "ForbesにてAIセキュリティ研究が掲載", "en": "AI security research featured in Forbes" },
+    "url": "#"
+  }
+]

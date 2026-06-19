@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "status": "open",
+    "format": "webinar",
+    "date": "2026-05-15",
+    "time": "14:00–15:30",
+    "title": { "ja": "中小企業のためのAI導入 第一歩セミナー", "en": "First Steps in AI Adoption for SMEs" },
+    "desc": { "ja": "AI導入を検討中の経営者・担当者向け。何から始めるべきかを90分で解説。", "en": "For executives considering AI adoption. Learn where to start in 90 minutes." }
+  },
+  {
+    "id": "2",
+    "status": "open",
+    "format": "webinar",
+    "date": "2026-06-10",
+    "time": "15:00–16:30",
+    "title": { "ja": "AIガバナンス最前線 — 安全なAI運用の設計", "en": "AI Governance Frontline — Designing Safe AI Operations" },
+    "desc": { "ja": "Forbes掲載のAIセキュリティ研究をベースに、企業が取るべきガバナンス設計を解説。", "en": "Based on Forbes-featured AI security research, learn the governance design your company needs." }
+  }
+]
