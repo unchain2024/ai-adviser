@@ -8,9 +8,8 @@ import { LanguageToggle } from "./LanguageToggle";
 const NAV_KEYS = [
   { key: "services", href: "#services" },
   { key: "pricing", href: "#pricing" },
-  { key: "cases", href: "#testimonials" },
+  { key: "cases", href: "#track-record" },
   { key: "founder", href: "#founder" },
-  { key: "news", href: "#news" },
 ] as const;
 
 export function Navbar() {
@@ -26,18 +25,20 @@ export function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 border-b border-border-subtle transition-colors duration-150 ${
-        scrolled ? "bg-bg-primary/92 backdrop-blur-[12px]" : "bg-bg-primary"
+      className={`sticky top-0 z-50 transition-all duration-200 ${
+        scrolled
+          ? "bg-bg-primary/90 shadow-sm backdrop-blur-lg"
+          : "bg-bg-primary"
       }`}
     >
-      <div className="mx-auto flex h-20 max-w-[1120px] items-center justify-between px-6 md:px-12">
+      <div className="mx-auto flex h-20 max-w-[1200px] items-center justify-between px-6 md:px-12">
         {/* Left: Brand */}
         <a href="#" className="flex flex-col">
-          <span className="font-inter text-[18px] font-semibold tracking-[0.02em] text-text-primary">
+          <span className="font-[var(--font-display)] text-[18px] font-medium tracking-[0.02em] text-text-primary">
             {t("brand")}
           </span>
-          <span className="text-[11px] font-semibold tracking-[0.12em] text-text-tertiary uppercase">
-            {t("subtitle")}
+          <span className="text-[10px] font-medium tracking-[0.14em] text-text-tertiary uppercase">
+            AI ADVISER
           </span>
         </a>
 
@@ -47,7 +48,7 @@ export function Navbar() {
             <a
               key={l.key}
               href={l.href}
-              className="text-[14px] font-medium text-text-secondary transition-colors duration-150 hover:text-accent hover:underline hover:underline-offset-[6px]"
+              className="text-[14px] text-text-secondary transition-colors duration-150 hover:text-accent"
             >
               {t(l.key)}
             </a>
@@ -59,7 +60,7 @@ export function Navbar() {
           <LanguageToggle />
           <a
             href="#contact"
-            className="inline-flex h-[44px] items-center rounded-sm bg-accent px-6 text-[14px] font-medium text-white transition-colors duration-150 hover:bg-accent-hover"
+            className="inline-flex h-[40px] items-center rounded-full bg-accent px-6 text-[13px] font-medium text-white transition-all duration-150 hover:bg-accent-hover hover:shadow-md"
           >
             {t("cta")}
           </a>
@@ -86,7 +87,7 @@ export function Navbar() {
             <a
               key={l.key}
               href={l.href}
-              className="block py-3 text-[14px] font-medium text-text-secondary transition-colors duration-150 hover:text-accent"
+              className="block py-3 text-[14px] text-text-secondary transition-colors duration-150 hover:text-accent"
               onClick={() => setMobileOpen(false)}
             >
               {t(l.key)}
@@ -97,7 +98,7 @@ export function Navbar() {
           </div>
           <a
             href="#contact"
-            className="mt-5 flex h-[44px] w-full items-center justify-center rounded-sm bg-accent text-[14px] font-medium text-white transition-colors duration-150 hover:bg-accent-hover"
+            className="mt-5 flex h-[40px] w-full items-center justify-center rounded-full bg-accent text-[13px] font-medium text-white transition-colors duration-150 hover:bg-accent-hover"
             onClick={() => setMobileOpen(false)}
           >
             {t("cta")}

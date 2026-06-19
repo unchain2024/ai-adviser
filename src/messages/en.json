@@ -19,7 +19,7 @@
     "title2": "initiative stuck?",
     "subtitle": "From evaluation to adoption. A trusted AI advisor who judges on three axes — technology, business, and risk — walks with your team end to end.",
     "cta": "Book a free consultation",
-    "ctaSecondary": "See what we do →",
+    "ctaSecondary": "See what we do",
     "trust": "SoftBank Academia  ·  UTokyo Matsuo Lab  ·  Featured in Forbes  ·  US-Japan Council 2025"
   },
   "problem": {
@@ -31,7 +31,7 @@
       { "label": "Stuck at PoC", "desc": "Proof-of-concept never reaches production" },
       { "label": "No owner", "desc": "No internal leader who can judge and drive DX/AI" }
     ],
-    "closing": "UNCHAIN functions as an actionable DX/AI advisor against all of these."
+    "closing": "UNCHAIN provides strategic DX/AI advisory guidance to address all of these."
   },
   "painPersonas": {
     "title": "Do any of these sound familiar?",
@@ -54,7 +54,7 @@
       },
       {
         "name": "AI Strategy & Implementation",
-        "subtitle": "Theme mapping → Tool selection → Workflow design → Implementation",
+        "subtitle": "Theme mapping → Tool selection → Workflow design → Implementation guidance",
         "desc": "From a vendor-neutral standpoint, design AI adoption priorities from business challenges and embed them into operations."
       },
       {
@@ -81,7 +81,7 @@
       { "title": "Hearing", "desc": "Understand status from both management and field perspectives" },
       { "title": "Problem mapping", "desc": "Align on priorities and ROI expectations" },
       { "title": "Roadmap", "desc": "3–12 month execution plan" },
-      { "title": "Implementation", "desc": "Tool selection, design, operational planning" },
+      { "title": "Implementation design", "desc": "Tool selection guidance, design advisory, operational planning" },
       { "title": "Adoption", "desc": "Internal champion training, PDCA establishment" }
     ]
   },
@@ -139,17 +139,23 @@
       {
         "industry": "US Research Institution",
         "solution": "Research data management × AI strategy design",
-        "desc": "Collaboration with UC Berkeley (IBI). Provided technical and operational support for complex academic data requirements — from secure cloud infrastructure design to AI adoption prioritization."
+        "desc": "Collaboration with UC Berkeley (IBI). Provided technical and operational support for complex academic data requirements — from secure cloud infrastructure design to AI adoption prioritization.",
+        "quote": "Rather than simply deploying tools, we could consult from the design stage on how to safely manage research data.",
+        "quoteAttr": "UC Berkeley (IBI)"
       },
       {
         "industry": "Apparel Manufacturing (90-year company)",
         "solution": "Legacy workflow preservation × AI priority design",
-        "desc": "For a 90-year-old company, respected existing workflows while identifying where AI would deliver the most impact. Achieved smooth adoption through partnership with corporate strategy."
+        "desc": "For a 90-year-old company, respected existing workflows while identifying where AI would deliver the most impact. Achieved smooth adoption through partnership with corporate strategy.",
+        "quote": "UNCHAIN respected our 90-year-old workflows while clearly identifying priorities for maximum impact.",
+        "quoteAttr": "Corporate Strategy Office"
       },
       {
         "industry": "Optics & Brittle Materials",
         "solution": "Factory system integration × Implementation design",
-        "desc": "Designed integration between existing factory systems used by craftsmen and modern AI. Delivered implementation blueprints by understanding field-level challenges that typical IT vendors cannot address."
+        "desc": "Designed integration between existing factory systems used by craftsmen and modern AI. Delivered implementation blueprints by understanding field-level challenges that typical IT vendors cannot address.",
+        "quote": "They understood our messy field-level challenges and drew an implementation blueprint for factory system integration.",
+        "quoteAttr": "Plant Manager"
       }
     ],
     "contactLink": "→ Inquire for details"
@@ -202,7 +208,7 @@
   },
   "pricing": {
     "title": "Place your AI officer outside the company",
-    "subtitle": "UNCHAIN provides mid-to-long-term partnership support based on monthly advisory contracts. Not one-off projects — we function as your continuous DX/AI partner.",
+    "subtitle": "UNCHAIN provides mid-to-long-term partnership support based on monthly advisory contracts. Not one-off projects — we function as your continuous DX/AI partner. Implementation and development are contracted separately.",
     "recommended": "RECOMMENDED",
     "plans": [
       {
@@ -244,9 +250,22 @@
           "Advanced governance & ops"
         ],
         "closing": "Building a de facto outsourced AI officer structure"
+      },
+      {
+        "num": "SPOT",
+        "name": "Claude Code Setup",
+        "price": "¥100,000",
+        "period": "one-time",
+        "target": "Companies deploying Claude Code for their teams",
+        "includes": [
+          "Claude Code environment setup & configuration",
+          "Staff training sessions (up to 10 people)",
+          "Usage guidelines & best practices"
+        ],
+        "closing": "A turnkey package to bring AI-assisted coding to non-engineers"
       }
     ],
-    "footnote": "* The above is advisory retainer pricing. Implementation and development work outside the advisory scope is quoted separately.",
+    "footnote": "* The above is AI advisory retainer pricing. Implementation, PoC, and development work are not included in advisory scope and are contracted separately.",
     "assurances": [
       { "num": "01", "title": "Vendor Neutral", "desc": "No tool sales agenda. We only provide optimal selection." },
       { "num": "02", "title": "Security First", "desc": "Forbes-featured AI governance expertise included as standard." },
@@ -316,19 +335,18 @@
       "industry": "Industry",
       "employees": "Company size",
       "message": "Message",
-      "contactMethod": "Preferred contact method",
       "selectPlaceholder": "Select..."
     },
-    "plans": ["Advisory", "Executive", "Enterprise", "Undecided"],
+    "plans": ["Advisory", "Executive", "Enterprise", "Claude Code Setup", "Undecided"],
     "industries": ["Manufacturing", "Construction & Real Estate", "IT & Telecom", "Finance & Insurance", "Healthcare", "Retail", "Education & Research", "Services", "Other"],
     "employeeCounts": ["1–50", "51–100", "101–300", "301–1,000", "1,001–5,000", "5,001+"],
-    "contactMethods": ["Email", "Phone", "Online meeting"],
     "submit": "Submit request",
     "submitting": "Submitting...",
     "freeMailError": "Please use a corporate email address (free email not accepted)",
     "submitError": "Submission failed. Please try again later.",
     "successTitle": "Thank you for your inquiry",
     "successDesc": "We will get back to you within 2 business days.",
+    "bookCall": "Book a time slot →",
     "emailDirect": "For email inquiries:",
     "responseSla": "Reply within 2 business days",
     "office": "Tokyo",

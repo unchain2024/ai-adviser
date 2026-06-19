@@ -29,7 +29,7 @@ export function VirtuousCycleSection() {
         {/* Cycle diagram */}
         <div className="mt-16 flex justify-center">
           <svg viewBox="0 0 300 300" className="h-auto w-full max-w-[400px]">
-            {/* Circle path */}
+            {/* Animated dashed circle */}
             <circle
               cx="150"
               cy="150"
@@ -38,7 +38,16 @@ export function VirtuousCycleSection() {
               className="stroke-svg-stroke"
               strokeWidth="1"
               strokeDasharray="4 4"
-            />
+            >
+              <animateTransform
+                attributeName="transform"
+                type="rotate"
+                from="0 150 150"
+                to="360 150 150"
+                dur="30s"
+                repeatCount="indefinite"
+              />
+            </circle>
 
             {/* Arrow arcs between nodes */}
             {[0, 1, 2, 3].map((i) => {
@@ -77,14 +86,27 @@ export function VirtuousCycleSection() {
               </marker>
             </defs>
 
-            {/* Center background ellipse */}
+            {/* Center pulse */}
             <ellipse
               cx="150"
               cy="148"
               rx="32"
               ry="10"
               className="fill-accent/5"
-            />
+            >
+              <animate
+                attributeName="rx"
+                values="32;36;32"
+                dur="3s"
+                repeatCount="indefinite"
+              />
+              <animate
+                attributeName="opacity"
+                values="1;0.5;1"
+                dur="3s"
+                repeatCount="indefinite"
+              />
+            </ellipse>
 
             {/* Center text */}
             <text
@@ -96,9 +118,32 @@ export function VirtuousCycleSection() {
               {t("center")}
             </text>
 
-            {/* Nodes */}
+            {/* Nodes with hover pulse */}
             {positions.map((pos, i) => (
-              <g key={i}>
+              <g key={i} className="cursor-pointer">
+                {/* Pulse ring */}
+                <circle
+                  cx={pos.x}
+                  cy={pos.y}
+                  r="24"
+                  fill="none"
+                  className="stroke-accent/20"
+                  strokeWidth="1"
+                >
+                  <animate
+                    attributeName="r"
+                    values="24;30;24"
+                    dur={`${2 + i * 0.5}s`}
+                    repeatCount="indefinite"
+                  />
+                  <animate
+                    attributeName="opacity"
+                    values="0.3;0;0.3"
+                    dur={`${2 + i * 0.5}s`}
+                    repeatCount="indefinite"
+                  />
+                </circle>
+
                 <circle
                   cx={pos.x}
                   cy={pos.y}

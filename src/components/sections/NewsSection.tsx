@@ -2,7 +2,9 @@
 
 import { useTranslations, useLocale } from "next-intl";
 import { SectionReveal } from "@/components/ui/SectionReveal";
+import { StaggerReveal } from "@/components/ui/StaggerReveal";
 import newsData from "@/data/news.json";
+import { ExternalLink } from "lucide-react";
 
 type NewsItem = {
   id: string;
@@ -30,22 +32,24 @@ export function NewsSection() {
         </h2>
 
         <div className="mt-16 divide-y divide-border-default border-t border-border-default">
-          {news.map((item) => (
-            <a
-              key={item.id}
-              href={item.url}
-              className="group flex flex-col gap-2 py-5 transition-colors duration-150 sm:flex-row sm:items-center sm:gap-6"
-            >
-              <span className="text-sm tabular-nums font-[Inter,sans-serif] text-text-tertiary group-hover:text-accent transition-colors duration-150">
-                {item.date}
-              </span>
-              <span className="bg-accent-soft px-2 py-0.5 text-[11px] font-semibold text-accent rounded-sm w-fit">
-                {item.category === "press" ? t("press") : t("coverage")}
-              </span>
-              <span className="flex-1 text-sm font-medium text-text-primary line-clamp-2 group-hover:text-accent transition-colors duration-150">
-                {item.title[locale]}
-              </span>
-            </a>
+          {news.map((item, idx) => (
+            <StaggerReveal key={item.id} index={idx}>
+              <a
+                href={item.url}
+                className="group flex flex-col gap-2 py-5 transition-all duration-200 hover:pl-2 sm:flex-row sm:items-center sm:gap-6"
+              >
+                <span className="text-sm tabular-nums font-[Inter,sans-serif] text-text-tertiary group-hover:text-accent transition-colors duration-150">
+                  {item.date}
+                </span>
+                <span className="bg-accent-soft px-2 py-0.5 text-[11px] font-semibold text-accent rounded-sm w-fit">
+                  {item.category === "press" ? t("press") : t("coverage")}
+                </span>
+                <span className="flex-1 text-sm font-medium text-text-primary line-clamp-2 group-hover:text-accent transition-colors duration-150">
+                  {item.title[locale]}
+                </span>
+                <ExternalLink className="hidden sm:block h-3.5 w-3.5 text-text-tertiary opacity-0 transition-all duration-200 group-hover:opacity-100 group-hover:text-accent" strokeWidth={1.5} />
+              </a>
+            </StaggerReveal>
           ))}
         </div>
       </div>

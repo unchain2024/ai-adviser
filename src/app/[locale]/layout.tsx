@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans_JP, Inter } from "next/font/google";
+import { Noto_Sans_JP, Inter, DM_Sans } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -7,7 +7,7 @@ import { routing } from "@/i18n/routing";
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
-  weight: ["400", "500", "700", "900"],
+  weight: ["300", "400", "500", "700", "900"],
   variable: "--font-noto-sans-jp",
 });
 
@@ -15,6 +15,12 @@ const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-inter",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  variable: "--font-dm-sans",
 });
 
 type Props = {
@@ -46,7 +52,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${notoSansJP.variable} ${inter.variable} antialiased`}
+        className={`${notoSansJP.variable} ${inter.variable} ${dmSans.variable} antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
           {children}

@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { SectionReveal } from "@/components/ui/SectionReveal";
+import { StaggerReveal } from "@/components/ui/StaggerReveal";
 import { Check } from "lucide-react";
 
 export function ComparisonSection() {
@@ -31,20 +32,19 @@ export function ComparisonSection() {
 
           {/* Data rows */}
           {rows.map((i) => (
-            <div
-              key={i}
-              className="grid grid-cols-2 border-b border-border-subtle py-4"
-            >
-              <p className="text-sm text-text-tertiary">
-                {t(`rows.${i}.them`)}
-              </p>
-              <div className="flex items-start gap-2 text-sm font-medium text-text-primary">
-                <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-accent">
-                  <Check className="h-2.5 w-2.5 text-white" strokeWidth={3} />
-                </span>
-                {t(`rows.${i}.us`)}
+            <StaggerReveal key={i} index={i}>
+              <div className="group grid grid-cols-2 border-b border-border-subtle py-4 transition-colors duration-200 hover:bg-accent-soft/50">
+                <p className="text-sm text-text-tertiary transition-colors duration-200 group-hover:text-text-secondary">
+                  {t(`rows.${i}.them`)}
+                </p>
+                <div className="flex items-start gap-2 text-sm font-medium text-text-primary">
+                  <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-accent transition-transform duration-300 group-hover:scale-110">
+                    <Check className="h-2.5 w-2.5 text-white" strokeWidth={3} />
+                  </span>
+                  {t(`rows.${i}.us`)}
+                </div>
               </div>
-            </div>
+            </StaggerReveal>
           ))}
         </div>
       </div>
