@@ -2,28 +2,49 @@
 
 @theme inline {
   --font-sans: 'Inter', var(--font-noto-sans-jp), system-ui, sans-serif;
-  --font-display: 'DM Sans', 'Inter', var(--font-noto-sans-jp), system-ui, sans-serif;
 
-  /* ─── Warm parchment palette ─── */
-  --color-bg-primary: #fdfcfb;
-  --color-bg-secondary: #f5f3f0;
-  --color-bg-tertiary: #edeae6;
-  --color-bg-dark: #141413;
-  --color-border-subtle: #e8e5e0;
-  --color-border-default: #d5d1cb;
-  --color-text-primary: #1a1a1a;
-  --color-text-secondary: #5c5c5c;
-  --color-text-tertiary: #9a9a9a;
-  --color-accent: #1B3A5C;
-  --color-accent-hover: #0F2B48;
-  --color-accent-soft: #EDF1F5;
-  --color-success: #1B3A5C;
+  /* ── Neutrals (taken from the Figma export) ── */
+  --color-ink: #131316;
+  --color-ink-soft: #51525C;
+  --color-ink-muted: #70707B;
+  --color-ink-faint: #D1D1D6;
+  --color-line: #E4E4E7;
+  --color-line-soft: #E9E9E9;
+  --color-line-grid: #D1D1D6;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F4F4F5;
+  --color-surface-card: #F5F5F5;
+  --color-night: #000000;
+  --color-night-card: #18181B;
+  --color-night-line: #26272B;
+  --color-night-rule: #3F3F46;
 
-  /* Sub-pixel hairline shadows */
-  --shadow-sm: 0 1px 2px rgba(0,0,0,0.03);
-  --shadow-md: 0 2px 8px rgba(0,0,0,0.04), 0 0 0 1px rgba(0,0,0,0.015);
-  --shadow-lg: 0 4px 16px rgba(0,0,0,0.05), 0 0 0 1px rgba(0,0,0,0.015);
-  --shadow-xl: 0 8px 32px rgba(0,0,0,0.06);
+  /* ── Brand ── */
+  --color-brand: #004DFF;
+  --color-brand-light: #4BB3FA;
+  --color-brand-link: #257FFC;
+  --color-brand-tint: #E9F1F8;
+
+  /* ── Status ── */
+  --color-status-green: #2BB33F;
+  --color-status-amber: #EE8802;
+  --color-status-grey: #9C9C9C;
+}
+
+/* Gradients lifted verbatim from the design file */
+:root {
+  --grad-brand: linear-gradient(180deg, #4BB3FA 0%, #004DFF 100%);
+  --grad-dark: linear-gradient(180deg, #373737 0%, #000000 100%);
+  --grad-chip: linear-gradient(180deg, #FAFAFA 0%, #F0F0F0 100%);
+  --grad-hero: linear-gradient(180deg, #FAFAFA 0%, #F0F0F0 100%);
+  --grad-check: linear-gradient(180deg, #C3F1BB 0%, #36B038 100%);
+
+  /* dot field: 252px circle of r18 tiled every 22.68px */
+  --dots-hero: radial-gradient(
+    circle at 1.62px 1.62px,
+    rgba(135, 135, 135, 0.1) 1.62px,
+    transparent 1.63px
+  );
 }
 
 html {
@@ -34,51 +55,47 @@ html {
 }
 
 body {
-  background: var(--color-bg-primary);
-  color: var(--color-text-primary);
+  background: #ffffff;
+  color: var(--color-ink);
   font-family: var(--font-sans);
-  font-variant-numeric: tabular-nums;
-}
-
-:lang(ja) p,
-:lang(ja) li {
-  line-height: 1.9;
-}
-
-:focus-visible {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 2px;
 }
 
 ::selection {
-  background: #1B3A5C;
-  color: #FFFFFF;
+  background: #004dff;
+  color: #ffffff;
 }
 
-.hover-lift {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-.hover-lift:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
+:focus-visible {
+  outline: 2px solid #004dff;
+  outline-offset: 2px;
 }
 
-@keyframes fade-slide-in {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Buttons ─ exact fills from the export */
+.btn-dark {
+  background: var(--grad-dark);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  color: #ffffff;
 }
-.animate-fade-slide-in {
-  animation: fade-slide-in 0.4s ease-out;
+.btn-light {
+  background: #ffffff;
+  box-shadow: inset 0 0 0 1px #e4e4e7;
+  color: var(--color-ink);
+}
+.btn-chip {
+  background: var(--grad-chip);
+  box-shadow: inset 0 0 0 1px #e4e4e7;
+  color: var(--color-ink);
 }
 
-input:focus,
-textarea:focus,
-select:focus {
-  border-color: var(--color-accent) !important;
+.dot-field {
+  background-image: var(--dots-hero);
+  background-size: 22.68px 22.68px;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;

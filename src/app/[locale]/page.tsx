@@ -1,31 +1,30 @@
-"use client";
-
-import { useState } from "react";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
-import { HeroSection } from "@/components/sections/HeroSection";
-import { ProblemSection } from "@/components/sections/ProblemSection";
-import { PillarsSection } from "@/components/sections/PillarsSection";
-import { WhyChosenSection } from "@/components/sections/WhyChosenSection";
-import { ProjectShowcaseSection } from "@/components/sections/ProjectShowcaseSection";
-import { FounderSection } from "@/components/sections/FounderSection";
-import { PricingSection } from "@/components/sections/PricingSection";
-import { ContactSection } from "@/components/sections/ContactSection";
+import { Navbar } from "@/components/site/Navbar";
+import { Hero } from "@/components/site/Hero";
+import { StatsStrip } from "@/components/site/StatsStrip";
+import { ProcessSection } from "@/components/site/ProcessSection";
+import { DeliverablesSection } from "@/components/site/DeliverablesSection";
+import { AudienceSection } from "@/components/site/AudienceSection";
+import { AdvisorSection } from "@/components/site/AdvisorSection";
+import { TestimonialsSection } from "@/components/site/TestimonialsSection";
+import { PricingSection } from "@/components/site/PricingSection";
+import { FaqSection } from "@/components/site/FaqSection";
+import { CtaBanner } from "@/components/site/CtaBanner";
+import { Footer } from "@/components/site/Footer";
 
 export default function Home() {
-  const [selectedPlan, setSelectedPlan] = useState("");
-
   return (
-    <div className="min-h-screen bg-bg-primary font-sans">
+    <div className="min-h-screen bg-white font-sans">
       <Navbar />
-      <HeroSection />
-      <ProblemSection />
-      <PillarsSection />
-      <WhyChosenSection />
-      <ProjectShowcaseSection />
-      <FounderSection />
-      <PricingSection onSelectPlan={setSelectedPlan} />
-      <ContactSection selectedPlan={selectedPlan} />
+      <Hero />
+      <StatsStrip />
+      <ProcessSection />
+      <DeliverablesSection />
+      <AudienceSection />
+      <AdvisorSection />
+      <TestimonialsSection />
+      <PricingSection />
+      <FaqSection />
+      <CtaBanner />
       <Footer />
     </div>
   );
