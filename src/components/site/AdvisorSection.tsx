@@ -44,7 +44,7 @@ export function AdvisorSection() {
           {/* copy */}
           <div className="flex flex-col">
             <Eyebrow>{t("eyebrow")}</Eyebrow>
-            <h2 className="mt-[22px] text-[34px] leading-[1.15] font-bold tracking-[-0.01em] text-black md:text-[46px] lg:text-[55px] lg:leading-[64px]">
+            <h2 className="mt-[22px] text-[34px] leading-[1.15] font-bold tracking-[-0.01em] text-black md:text-[46px] lg:text-[55px] lg:leading-[64px] [line-break:strict] [word-break:keep-all]">
               {t("titleLine1")}
               <br />
               {t("titleLine2")}
@@ -67,6 +67,7 @@ export function AdvisorSection() {
                 </li>
               </ul>
               <p className="mt-[9px] text-[16px] leading-[23px] text-[#51525C]">{t("note1")}</p>
+              <p className="text-[16px] leading-[23px] text-[#51525C]">{t("team")}</p>
               <p className="text-[16px] leading-[23px] text-[#51525C]">{t("note2")}</p>
             </div>
           </div>

@@ -3,9 +3,9 @@ import { Container, Eyebrow } from "./ui";
 import { SectionLink } from "./SectionLink";
 
 const NAV = [
+  { key: "audience", href: "#audience" },
   { key: "process", href: "#process" },
   { key: "deliverables", href: "#deliverables" },
-  { key: "audience", href: "#audience" },
   { key: "pricing", href: "#pricing" },
   { key: "faq", href: "#faq" },
 ] as const;
@@ -15,6 +15,14 @@ const LEGAL = [
   { key: "privacy", path: "privacy-policy" },
   { key: "terms", path: "terms-of-use" },
   { key: "security", path: "trust-security" },
+] as const;
+
+/** 会社情報。正式社名・所在地・代表者表記は登記および公式プロフィールに合わせて確認のうえ更新する。 */
+const COMPANY = [
+  ["companyNameLabel", "companyName"],
+  ["addressLabel", "address"],
+  ["repLabel", "rep"],
+  ["contactLabel", "contact"],
 ] as const;
 
 const SOCIAL = [
@@ -49,6 +57,27 @@ export function Footer() {
               width={132}
               height={35}
             />
+
+            <Eyebrow className="mt-[34px] text-white">{tf("companyTitle")}</Eyebrow>
+            <dl className="mt-[21px] space-y-[12px] text-[14px] leading-[20px]">
+              {COMPANY.map(([label, value]) => (
+                <div key={label} className="flex gap-[8px]">
+                  <dt className="shrink-0 text-[#D1D1D6]">{tf(label)}</dt>
+                  <dd className="text-white">
+                    {label === "contactLabel" ? (
+                      <a
+                        href={`mailto:${tf(value)}`}
+                        className="transition-opacity hover:opacity-70"
+                      >
+                        {tf(value)}
+                      </a>
+                    ) : (
+                      tf(value)
+                    )}
+                  </dd>
+                </div>
+              ))}
+            </dl>
           </div>
 
           <nav>

@@ -4,10 +4,15 @@ import { useRef } from "react";
 import { useTranslations } from "next-intl";
 import { Container, Eyebrow } from "./ui";
 
+/**
+ * 導入事例。掲載許諾済みの実在事例が揃うまでページから外してあります（page.tsx 参照）。
+ * 公開する前に、各カードを「業種・従業員規模・部門／導入前の課題／実施内容／
+ * 導入後の変化／掲載許諾の注記」の構成に置き換え、ストック写真を差し替えること。
+ * 重複カードと、本文に根拠のない「体感で半分」の注記は削除済み。
+ */
 const ITEMS = [
   { avatar: "/art/avatar-1.webp", role: "item1Role", company: "item1Company", quote: "item1Quote" },
   { avatar: "/art/avatar-2.webp", role: "item2Role", company: "item2Company", quote: "item2Quote" },
-  { avatar: "/art/avatar-3.webp", role: "item3Role", company: "item3Company", quote: "item3Quote" },
 ] as const;
 
 export function TestimonialsSection() {
@@ -110,10 +115,6 @@ export function TestimonialsSection() {
           ))}
         </div>
       </div>
-
-      <Container>
-        <p className="mt-[37px] text-[12px] leading-none text-[#70707B]">{t("footnote")}</p>
-      </Container>
     </section>
   );
 }

@@ -58,9 +58,9 @@ export function ProcessSection() {
     <section id="process" className="scroll-mt-[78px] bg-white pt-[120px] pb-[120px]">
       <Container>
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-          <div>
+          <div className="lg:max-w-[760px]">
             <Eyebrow>{t("eyebrow")}</Eyebrow>
-            <h2 className="mt-[22px] text-[34px] leading-[1.15] font-bold tracking-[-0.01em] text-black md:text-[46px] lg:text-[55px]">
+            <h2 className="mt-[22px] text-[34px] leading-[1.15] font-bold tracking-[-0.01em] text-black [line-break:strict] [word-break:keep-all] md:text-[46px] lg:text-[55px]">
               {t("title")}
             </h2>
           </div>
@@ -96,6 +96,12 @@ export function ProcessSection() {
                 </ArtText>
                 <ArtText box={BOX} origin={[524, 278]} x={692} y={433.5} middle size={itemSize} color="#131316" weight={500}>
                   {t("card2ArtItem")}
+                </ArtText>
+                <ArtText box={BOX} origin={[524, 278]} x={692} y={491.5} middle size={itemSize} color="#131316" weight={500}>
+                  {t("card2ArtItem2")}
+                </ArtText>
+                <ArtText box={BOX} origin={[524, 278]} x={692} y={549.5} middle size={itemSize} color="#131316" weight={500}>
+                  {t("card2ArtItem3")}
                 </ArtText>
                 <ArtText box={BOX} origin={[524, 278]} {...statusBox} y={433.5} middle size={chipSize} color="#131316" weight={500}>
                   {t("card2ArtHigh")}

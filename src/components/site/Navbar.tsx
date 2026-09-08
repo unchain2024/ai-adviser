@@ -6,10 +6,12 @@ import { Container } from "./ui";
 import { SectionLink } from "./SectionLink";
 import { LanguageToggle } from "./LanguageToggle";
 
+/* 対象企業 ＞ ご支援の流れ ＞ 成果物 ＞ 料金 ＞ よくある質問。
+   「導入事例」は掲載許諾済みの事例を公開できるまでナビに出さない。 */
 const LINKS = [
+  { key: "audience", href: "#audience" },
   { key: "process", href: "#process" },
   { key: "deliverables", href: "#deliverables" },
-  { key: "audience", href: "#audience" },
   { key: "pricing", href: "#pricing" },
   { key: "faq", href: "#faq" },
 ] as const;

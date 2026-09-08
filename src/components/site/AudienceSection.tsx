@@ -16,7 +16,7 @@ export function AudienceSection() {
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <Eyebrow>{t("eyebrow")}</Eyebrow>
-            <h2 className="mt-[22px] text-[34px] leading-[1.15] font-bold tracking-[-0.01em] text-black md:text-[46px] lg:text-[55px] lg:leading-[63px]">
+            <h2 className="mt-[22px] text-[34px] leading-[1.15] font-bold tracking-[-0.01em] text-black md:text-[46px] lg:text-[55px] lg:leading-[63px] [line-break:strict] [word-break:keep-all]">
               {t("titleLine1")}
               <br />
               {t("titleLine2")}
@@ -39,7 +39,7 @@ export function AudienceSection() {
               </div>
 
               <div className="mt-[24px] flex flex-1 flex-col border-t border-[#E4E4E7] px-[24px] pt-[29px]">
-                <h3 className="text-[24px] leading-none font-medium text-[#131316]">
+                <h3 className="text-[24px] leading-[1.3] font-medium text-[#131316]">
                   {t(card.title)}
                 </h3>
                 <p className="mt-[21px] text-[14px] leading-[21px] text-[#51525C]">

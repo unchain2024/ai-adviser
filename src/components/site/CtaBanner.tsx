@@ -21,7 +21,7 @@ export function CtaBanner() {
           />
 
           <div className="relative lg:pt-[10px]">
-            <h2 className="max-w-[660px] text-[32px] leading-[1.2] font-bold tracking-[-0.01em] text-white md:text-[40px] lg:text-[46px] lg:leading-[55px]">
+            <h2 className="max-w-[660px] text-[32px] leading-[1.2] font-bold tracking-[-0.01em] text-white [line-break:strict] [word-break:keep-all] md:text-[40px] lg:text-[46px] lg:leading-[55px]">
               {t("titleLine1")}
               <br />
               {t("titleLine2")}
@@ -45,6 +45,9 @@ export function CtaBanner() {
                 {t("secondary")}
               </SectionLink>
             </div>
+            <p className="mt-[20px] text-[13px] leading-[19px] text-white/85">
+              {t("consent")}
+            </p>
           </div>
         </div>
       </Container>

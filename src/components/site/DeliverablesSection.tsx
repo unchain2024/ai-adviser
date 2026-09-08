@@ -8,13 +8,14 @@ const BOX: [number, number] = [594, 280];
  * far wider per line, so it gets the full text column the artwork leaves free.
  */
 const CARDS = [
-  { src: "/art/s2-a.svg", origin: [120, 317] as [number, number], key: "item1", titleWidth: 240 },
-  { src: "/art/s2-b.svg", origin: [726, 317] as [number, number], key: "item2", titleWidth: 196 },
-  { src: "/art/s2-c.svg", origin: [120, 609] as [number, number], key: "item3", titleWidth: 150 },
-  { src: "/art/s2-d.svg", origin: [726, 609] as [number, number], key: "item4", titleWidth: 240 },
+  { src: "/art/s2-a.svg", origin: [120, 317] as [number, number], key: "item1", titleWidth: 250 },
+  { src: "/art/s2-b.svg", origin: [726, 317] as [number, number], key: "item2", titleWidth: 250 },
+  { src: "/art/s2-c.svg", origin: [120, 609] as [number, number], key: "item3", titleWidth: 250 },
+  { src: "/art/s2-d.svg", origin: [726, 609] as [number, number], key: "item4", titleWidth: 250 },
 ] as const;
 
-const EXTRAS = ["extra1", "extra2", "extra3", "extra4", "extra5"] as const;
+/* extra6 = 定例セッション記録 — 議事録は主要成果物から補助項目に移した。 */
+const EXTRAS = ["extra1", "extra2", "extra3", "extra4", "extra5", "extra6"] as const;
 
 export function DeliverablesSection() {
   const t = useTranslations("site.deliverables");
@@ -60,8 +61,8 @@ export function DeliverablesSection() {
         {/* one row of five, split by hairlines — the gutter is the design's 63px
             in Japanese and tightens for the longer Latin labels */}
         <div
-          className="mt-[27px] flex flex-wrap items-center justify-center rounded-[12px] bg-[#18181B] py-[33px] ring-1 ring-white/10 lg:flex-nowrap"
-          style={{ ["--gutter" as string]: isJa ? "63px" : "34px" }}
+          className="mt-[27px] flex flex-wrap items-center justify-center rounded-[12px] bg-[#18181B] py-[33px] ring-1 ring-white/10 lg:flex-nowrap lg:overflow-x-auto"
+          style={{ ["--gutter" as string]: isJa ? "26px" : "18px" }}
         >
           {EXTRAS.map((k, i) => (
             <div key={k} className="flex items-center">

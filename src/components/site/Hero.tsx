@@ -127,18 +127,20 @@ export function Hero() {
       className="dot-field relative -mt-[78px] overflow-hidden"
       style={{ background: "var(--grad-hero)" }}
     >
-      {/* decorative rules from the design canvas */}
-      <div className="pointer-events-none absolute inset-0 hidden xl:block" aria-hidden="true">
+      {/* Decorative rules from the design canvas. The horizontal rules stop at the
+          47.92% vertical so they no longer run through the headline and subtitle;
+          the whole layer also sits behind the content column. */}
+      <div className="pointer-events-none absolute inset-0 z-0 hidden xl:block" aria-hidden="true">
         <span className="absolute top-0 bottom-0 left-[47.92%] w-px bg-[#D1D1D6]" />
         <span className="absolute top-0 bottom-0 left-[93.61%] w-px bg-[#D1D1D6]" />
-        <span className="absolute inset-x-0 top-[30.56%] h-px bg-[#D1D1D6]" />
-        <span className="absolute inset-x-0 top-[79.67%] h-px bg-[#D1D1D6]" />
+        <span className="absolute top-[30.56%] right-0 left-[47.92%] h-px bg-[#D1D1D6]" />
+        <span className="absolute top-[79.67%] right-0 left-[47.92%] h-px bg-[#D1D1D6]" />
       </div>
 
-      <Container className="relative">
+      <Container className="relative z-10">
         <div className="grid items-start gap-14 pt-[150px] pb-[110px] lg:grid-cols-[1fr_602px] lg:gap-0 lg:pt-[303.765px] lg:pb-[210px]">
           <div className="lg:pt-[37px]">
-            <h1 className="text-[40px] leading-[1.17] font-bold text-[#131316] md:text-[52px] lg:text-[61px] lg:leading-[70px]">
+            <h1 className="text-[40px] leading-[1.17] font-bold text-[#131316] [line-break:strict] [word-break:keep-all] md:text-[52px] lg:text-[61px] lg:leading-[70px]">
               {t("titleLine1")}
               <br />
               {t("titleLine2")}
@@ -154,7 +156,7 @@ export function Hero() {
                 {t("ctaPrimary")}
               </SectionLink>
               <SectionLink
-                href="#pricing"
+                href="#process"
                 className="btn-light inline-flex h-[50px] items-center justify-center rounded-[10px] px-[17px] text-[16px] font-medium"
               >
                 {t("ctaSecondary")}

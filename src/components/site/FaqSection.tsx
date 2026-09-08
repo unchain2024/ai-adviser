@@ -4,16 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Container, Eyebrow } from "./ui";
 
-const ITEMS = [
-  ["q1", "a1"],
-  ["q2", "a2"],
-  ["q3", "a3"],
-  ["q4", "a4"],
-  ["q5", "a5"],
-  ["q6", "a6"],
-  ["q7", "a7"],
-  ["q8", "a8"],
-] as const;
+const ITEMS = Array.from({ length: 17 }, (_, i) => [`q${i + 1}`, `a${i + 1}`] as const);
 
 export function FaqSection() {
   const t = useTranslations("site.faq");
