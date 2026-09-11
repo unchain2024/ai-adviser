@@ -1,0 +1,18 @@
+<!-- Hero backdrop glow, Figma node 122:2409. Blur 135, not the exported 150:
+     Figma renders its layer blur tighter than SVG feGaussianBlur, and 135 is
+     what matches the canvas (mean delta 1.01 vs 2.00 at 150). -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="783" viewBox="0 0 1440 783" fill="none" preserveAspectRatio="none"><rect width="1440" height="783" fill="white"/>
+<g filter="url(#filter0_f_122_2408)">
+<ellipse cx="59.5" cy="1380.5" rx="875.5" ry="852.5" fill="#004DFF"/>
+</g>
+<g filter="url(#filter1_f_122_2408)">
+<ellipse cx="1371.5" cy="1380.5" rx="875.5" ry="852.5" fill="#4BB3FA"/>
+</g><defs><filter id="filter0_f_122_2408" x="-1116" y="228" width="2351" height="2305" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="135" result="effect1_foregroundBlur_122_2408"/>
+</filter><filter id="filter1_f_122_2408" x="196" y="228" width="2351" height="2305" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="135" result="effect1_foregroundBlur_122_2408"/>
+</filter></defs></svg>

@@ -1,12 +1,13 @@
-import { useTranslations } from "next-intl";
-import { Container, Eyebrow } from "./ui";
-import { SectionLink } from "./SectionLink";
+import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
+import { Container, Eyebrow, contactHref } from "./ui";
 
 /** 他の選択肢との違い — 一般的なAI研修 / 単発コンサル / AI ADVISOR の3列比較。 */
 const ROWS = ["row1", "row2", "row3", "row4", "row5"] as const;
 
 export function ComparisonSection() {
   const t = useTranslations("site.comparison");
+  const locale = useLocale();
 
   return (
     <section id="comparison" className="scroll-mt-[78px] bg-white pt-[120px] pb-[120px]">
@@ -58,12 +59,12 @@ export function ComparisonSection() {
         {/* second of the three CTAs: hero / here / final banner */}
         <div className="mt-[48px] flex flex-col items-center gap-[16px]">
           <p className="text-[16px] leading-[23px] text-[#51525C]">{t("ctaNote")}</p>
-          <SectionLink
-            href="#contact"
+          <Link
+            href={contactHref(locale)}
             className="btn-dark inline-flex h-[50px] items-center justify-center rounded-[10px] px-[17px] text-[16px] font-medium"
           >
             {t("cta")}
-          </SectionLink>
+          </Link>
         </div>
       </Container>
     </section>

@@ -865,6 +865,73 @@
       "secondary": "See pricing plans",
       "consent": "Please review our privacy policy and contact us on the understanding that you agree to it."
     },
+    "contactPage": {
+      "metaTitle": "Book a free consult (30 min) | AI ADVISOR by UNCHAIN",
+      "metaDescription": "Tell us where you stand today and pick a 30-minute online slot. No preparation needed, no obligation to continue.",
+      "eyebrow": "Free consult",
+      "titleLine1": "Give us 30 minutes.",
+      "titleLine2": "We will show you where to start.",
+      "subtitle": "A 30-minute online session with the advisor who would work with you. Your challenge does not have to be defined yet — tell us where you are today and we will propose what to start with and the plan that fits.",
+      "point1Title": "30 minutes, nothing to prepare",
+      "point1Desc": "Come as you are. We will ask about your current setup and where AI is stuck.",
+      "point2Title": "NDA before any detail",
+      "point2Desc": "We sign an NDA on your paper or ours before we discuss anything specific.",
+      "point3Title": "You leave with a first step",
+      "point3Desc": "One priority you can act on and the plan that fits — no obligation to continue.",
+      "emailDirect": "Prefer email?",
+      "step1": "Your details",
+      "step2": "Pick a time",
+      "formTitle": "Request your consult",
+      "formDesc": "Tell us a bit about you, then pick a time on the next step.",
+      "fields": {
+        "name": "Your name",
+        "company": "Company name",
+        "email": "Work email",
+        "role": "Job title",
+        "employees": "Company size",
+        "plan": "Plan of interest",
+        "message": "Anything you want us to know"
+      },
+      "placeholders": {
+        "name": "Jane Smith",
+        "company": "Acme Inc.",
+        "email": "jane@company.com",
+        "role": "Head of Corporate Strategy",
+        "message": "Your team, the use case you have in mind, or specific questions…"
+      },
+      "optional": "(optional)",
+      "selectPlaceholder": "Select…",
+      "employeeOptions": {
+        "e1": "1–50",
+        "e2": "51–100",
+        "e3": "101–300",
+        "e4": "301–1,000",
+        "e5": "1,001–5,000",
+        "e6": "5,001+"
+      },
+      "planOptions": {
+        "p1": "Executive",
+        "p2": "Department",
+        "p3": "Company-wide",
+        "p0": "Not decided yet"
+      },
+      "errors": {
+        "required": "This field is required.",
+        "email": "Please enter a valid email address.",
+        "select": "Please choose an option.",
+        "freeMail": "Please use your work email address (free email not accepted)."
+      },
+      "submit": "Continue to pick a time",
+      "submitting": "Sending…",
+      "submitError": "We could not send your details. Please try again, or email contact@the-unchain.com.",
+      "consent": "By submitting, you agree to be contacted about this consult. Your details are handled under our privacy policy.",
+      "doneTitle": "Thanks, one last step!",
+      "doneDesc": "We have received your details. Pick a time below and your consult is booked.",
+      "meetingLength": "30 min",
+      "meetingFormat": "Online",
+      "pickTime": "Pick a time",
+      "doneFallback": "Cannot find a slot that works? We will reach out within 1 business day to arrange one."
+    },
     "footer": {
       "navTitle": "Navigation",
       "legalTitle": "Legal",

@@ -1,6 +1,8 @@
 "use client";
 
 import type { AnchorHTMLAttributes, MouseEvent } from "react";
+import { useLocale } from "next-intl";
+import { usePathname } from "next/navigation";
 
 /**
  * In-page navigation for the one-page layout. Scrolls smoothly to the section
@@ -10,6 +12,10 @@ import type { AnchorHTMLAttributes, MouseEvent } from "react";
  * Renders a real <a href="#…">, so it stays right-clickable and crawlable, and
  * still works if JS hasn't run. `scroll-margin-top` on the sections keeps the
  * target clear of the sticky navbar.
+ *
+ * The standalone pages (/contact) share the navbar and footer, so a "#pricing"
+ * there has nothing to scroll to. On those pages the same links resolve to
+ * "/{locale}#pricing" and navigate home instead.
  */
 export function SectionLink({
   href,
@@ -17,6 +23,14 @@ export function SectionLink({
   children,
   ...rest
 }: AnchorHTMLAttributes<HTMLAnchorElement> & { href: string }) {
+  const locale = useLocale();
+  const pathname = usePathname();
+  const home = `/${locale}`;
+  const onHome = pathname === home || pathname === `${home}/`;
+  const isHash = href.startsWith("#");
+  const resolved =
+    isHash && !onHome ? (href === "#top" ? home : `${home}${href}`) : href;
+
   function handleClick(event: MouseEvent<HTMLAnchorElement>) {
     onClick?.(event);
 
@@ -24,7 +38,7 @@ export function SectionLink({
     if (event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
       return;
     }
-    if (!href.startsWith("#")) return;
+    if (!isHash || !onHome) return;
 
     const id = href.slice(1);
     const target = id === "top" ? document.body : document.getElementById(id);
@@ -39,7 +53,7 @@ export function SectionLink({
   }
 
   return (
-    <a href={href} onClick={handleClick} {...rest}>
+    <a href={resolved} onClick={handleClick} {...rest}>
       {children}
     </a>
   );

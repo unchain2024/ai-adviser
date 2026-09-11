@@ -1,6 +1,6 @@
-import { useTranslations } from "next-intl";
-import { Container, Eyebrow } from "./ui";
-import { SectionLink } from "./SectionLink";
+import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
+import { Container, Eyebrow, contactHref } from "./ui";
 
 function Check() {
   return (
@@ -35,6 +35,7 @@ const PLANS = [
     featured: false,
     custom: false,
     cta: "cta",
+    param: "executive",
   },
   {
     name: "plan2Name",
@@ -44,6 +45,7 @@ const PLANS = [
     featured: true,
     custom: false,
     cta: "cta",
+    param: "department",
   },
   {
     name: "plan3Name",
@@ -53,6 +55,7 @@ const PLANS = [
     featured: false,
     custom: true,
     cta: "plan3Cta",
+    param: "company",
   },
 ] as const;
 
@@ -120,6 +123,7 @@ function PlanFeatures({ plan }: { plan: (typeof PLANS)[number] }) {
 
 export function PricingSection() {
   const t = useTranslations("site.pricing");
+  const locale = useLocale();
 
   return (
     <section id="pricing" className="scroll-mt-[78px] bg-[#F4F4F5] pt-[120px] pb-[121px]">
@@ -141,12 +145,12 @@ export function PricingSection() {
               >
                 <div className="rounded-[16px] bg-white px-[32px] pt-[30px] pb-[30px]">
                   <PlanBody plan={plan} />
-                  <SectionLink
-                    href="#contact"
+                  <Link
+                    href={contactHref(locale, plan.param)}
                     className="btn-dark mt-[24px] flex h-[50px] items-center justify-center rounded-[10px] px-[12px] text-center text-[15px] font-medium"
                   >
                     {t(plan.cta)}
-                  </SectionLink>
+                  </Link>
                   <PlanFeatures plan={plan} />
                 </div>
               </div>
@@ -156,12 +160,12 @@ export function PricingSection() {
                 className="rounded-[20px] bg-white px-[32px] pt-[32px] pb-[32px] ring-1 ring-[#E4E4E7]"
               >
                 <PlanBody plan={plan} />
-                <SectionLink
-                  href="#contact"
+                <Link
+                  href={contactHref(locale, plan.param)}
                   className="mt-[24px] flex h-[49px] items-center justify-center rounded-[10px] bg-[#F4F4F5] px-[12px] text-center text-[15px] font-medium text-[#131316] ring-1 ring-[#E4E4E7] transition-colors hover:bg-[#ECECEE]"
                 >
                   {t(plan.cta)}
-                </SectionLink>
+                </Link>
                 <PlanFeatures plan={plan} />
               </div>
             ),

@@ -128,3 +128,10 @@ export function ArtText({
     </span>
   );
 }
+
+/**
+ * 無料相談ページへのリンク。`plan` を渡すと申込フォームのプラン欄が選択済みになる。
+ */
+export function contactHref(locale: string, plan?: string) {
+  return plan ? `/${locale}/contact?plan=${plan}` : `/${locale}/contact`;
+}

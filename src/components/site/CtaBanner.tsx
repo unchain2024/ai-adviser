@@ -1,9 +1,11 @@
-import { useTranslations } from "next-intl";
-import { Container } from "./ui";
+import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
+import { Container, contactHref } from "./ui";
 import { SectionLink } from "./SectionLink";
 
 export function CtaBanner() {
   const t = useTranslations("site.ctaBanner");
+  const locale = useLocale();
 
   return (
     <section id="contact" className="scroll-mt-[78px] bg-white pt-[80px] pb-[80px]">
@@ -32,12 +34,12 @@ export function CtaBanner() {
               {t("descLine2")}
             </p>
             <div className="mt-[65px] flex flex-wrap items-center gap-[16px]">
-              <a
-                href="mailto:contact@the-unchain.com"
+              <Link
+                href={contactHref(locale)}
                 className="btn-light inline-flex h-[50px] items-center justify-center rounded-[10px] px-[18px] text-[16px] font-medium"
               >
                 {t("primary")}
-              </a>
+              </Link>
               <SectionLink
                 href="#pricing"
                 className="inline-flex h-[50px] items-center justify-center rounded-[10px] bg-white/20 px-[18px] text-[16px] font-medium text-white transition-colors hover:bg-white/30"

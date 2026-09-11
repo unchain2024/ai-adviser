@@ -6,10 +6,16 @@ export async function POST(req: Request) {
 
   const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
   if (!webhookUrl) {
-    return NextResponse.json(
-      { error: "Webhook URL not configured" },
-      { status: 500 },
-    );
+    // 本番は設定漏れとして失敗させる。ローカルでは Webhook 未設定でも
+    // 予約フロー（日程選択まで）を通して確認できるよう、内容をログに出す。
+    if (process.env.NODE_ENV === "production") {
+      return NextResponse.json(
+        { error: "Webhook URL not configured" },
+        { status: 500 },
+      );
+    }
+    console.warn("[contact] DISCORD_WEBHOOK_URL not set — logging instead:", body);
+    return NextResponse.json({ ok: true, delivered: false });
   }
 
   const embed = {

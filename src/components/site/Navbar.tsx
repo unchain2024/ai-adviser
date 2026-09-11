@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from "next-intl";
-import { Container } from "./ui";
+import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
+import { Container, contactHref } from "./ui";
 import { SectionLink } from "./SectionLink";
 import { LanguageToggle } from "./LanguageToggle";
 
@@ -18,6 +19,7 @@ const LINKS = [
 
 export function Navbar() {
   const t = useTranslations("site.nav");
+  const locale = useLocale();
   const [open, setOpen] = useState(false);
 
   return (
@@ -46,12 +48,12 @@ export function Navbar() {
 
             <div className="ml-auto flex items-center gap-4">
               <LanguageToggle />
-              <SectionLink
-                href="#contact"
+              <Link
+                href={contactHref(locale)}
                 className="btn-dark hidden h-[36px] items-center rounded-[8px] px-[13px] text-[14px] font-medium lg:inline-flex"
               >
                 {t("cta")}
-              </SectionLink>
+              </Link>
               <button
                 type="button"
                 className="lg:hidden"
@@ -82,13 +84,13 @@ export function Navbar() {
                   {t(l.key)}
                 </SectionLink>
               ))}
-              <SectionLink
-                href="#contact"
+              <Link
+                href={contactHref(locale)}
                 onClick={() => setOpen(false)}
                 className="btn-dark mt-3 flex h-[44px] items-center justify-center rounded-[8px] text-[14px] font-medium"
               >
                 {t("cta")}
-              </SectionLink>
+              </Link>
             </div>
           )}
         </nav>
