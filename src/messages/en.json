@@ -25,11 +25,26 @@
   "problem": {
     "title": "Why DX and AI initiatives stall",
     "items": [
-      { "label": "Can't start", "desc": "Migration to Google Workspace or AWS remains untouched" },
-      { "label": "Can't choose", "desc": "No clarity on which AI tools to adopt" },
-      { "label": "Can't integrate", "desc": "No idea how to embed AI into daily workflows" },
-      { "label": "Stuck at PoC", "desc": "Proof-of-concept never reaches production" },
-      { "label": "No owner", "desc": "No internal leader who can judge and drive DX/AI" }
+      {
+        "label": "Can't start",
+        "desc": "Migration to Google Workspace or AWS remains untouched"
+      },
+      {
+        "label": "Can't choose",
+        "desc": "No clarity on which AI tools to adopt"
+      },
+      {
+        "label": "Can't integrate",
+        "desc": "No idea how to embed AI into daily workflows"
+      },
+      {
+        "label": "Stuck at PoC",
+        "desc": "Proof-of-concept never reaches production"
+      },
+      {
+        "label": "No owner",
+        "desc": "No internal leader who can judge and drive DX/AI"
+      }
     ],
     "closing": "UNCHAIN provides strategic DX/AI advisory guidance to address all of these."
   },
@@ -65,24 +80,60 @@
     ],
     "stepsTitle": "7-step support process",
     "steps": [
-      { "num": "01", "title": "DX foundation setup" },
-      { "num": "02", "title": "AI theme mapping" },
-      { "num": "03", "title": "Tool selection" },
-      { "num": "04", "title": "Workflow design" },
-      { "num": "05", "title": "Implementation support" },
-      { "num": "06", "title": "Governance build" },
-      { "num": "07", "title": "Continuous improvement" }
+      {
+        "num": "01",
+        "title": "DX foundation setup"
+      },
+      {
+        "num": "02",
+        "title": "AI theme mapping"
+      },
+      {
+        "num": "03",
+        "title": "Tool selection"
+      },
+      {
+        "num": "04",
+        "title": "Workflow design"
+      },
+      {
+        "num": "05",
+        "title": "Implementation support"
+      },
+      {
+        "num": "06",
+        "title": "Governance build"
+      },
+      {
+        "num": "07",
+        "title": "Continuous improvement"
+      }
     ]
   },
   "serviceFlow": {
     "title": "Engagement flow",
     "desc": "We start by carefully listening to your business model and operational realities, then chart a roadmap to resolution and walk with you through implementation and adoption.",
     "stages": [
-      { "title": "Hearing", "desc": "Understand status from both management and field perspectives" },
-      { "title": "Problem mapping", "desc": "Align on priorities and ROI expectations" },
-      { "title": "Roadmap", "desc": "3–12 month execution plan" },
-      { "title": "Implementation design", "desc": "Tool selection guidance, design advisory, operational planning" },
-      { "title": "Adoption", "desc": "Internal champion training, PDCA establishment" }
+      {
+        "title": "Hearing",
+        "desc": "Understand status from both management and field perspectives"
+      },
+      {
+        "title": "Problem mapping",
+        "desc": "Align on priorities and ROI expectations"
+      },
+      {
+        "title": "Roadmap",
+        "desc": "3–12 month execution plan"
+      },
+      {
+        "title": "Implementation design",
+        "desc": "Tool selection guidance, design advisory, operational planning"
+      },
+      {
+        "title": "Adoption",
+        "desc": "Internal champion training, PDCA establishment"
+      }
     ]
   },
   "virtuousCycle": {
@@ -122,14 +173,41 @@
     "quote": "Not theory alone. Not the field alone.\nWhich is why I can judge — on the spot — whether something is technically feasible, commercially sound, and culturally fit for Japanese enterprises.",
     "narrative": "Accepted into SoftBank Academia at 18, joining Masayoshi Son's next-generation leader program. Interned at the University of Tokyo Matsuo Lab CEO's office, co-founded Deepreneur (a Matsuo Lab AI startup), and conducted Forbes-featured AI security research as a Waseda University researcher. In 2025, spoke at the US-Japan Council annual conference. Drawing on experience spanning research, business, and policy, he provides an immediate decision-making framework as an AI advisor.",
     "timeline": [
-      { "year": "2018", "org": "SoftBank Academia", "desc": "Next-generation leader program by Masayoshi Son. Accepted at age 18" },
-      { "year": "2020", "org": "UTokyo Matsuo Lab", "desc": "CEO's office intern. Engaged in Japan's top AI research" },
-      { "year": "2021", "org": "Deepreneur Co-founder", "desc": "Matsuo Lab AI startup" },
-      { "year": "2023", "org": "Waseda University Researcher", "desc": "AI security research, featured in Forbes" },
-      { "year": "2025", "org": "US-Japan Council Speaker", "desc": "International AI policy & business forum" }
+      {
+        "year": "2018",
+        "org": "SoftBank Academia",
+        "desc": "Next-generation leader program by Masayoshi Son. Accepted at age 18"
+      },
+      {
+        "year": "2020",
+        "org": "UTokyo Matsuo Lab",
+        "desc": "CEO's office intern. Engaged in Japan's top AI research"
+      },
+      {
+        "year": "2021",
+        "org": "Deepreneur Co-founder",
+        "desc": "Matsuo Lab AI startup"
+      },
+      {
+        "year": "2023",
+        "org": "Waseda University Researcher",
+        "desc": "AI security research, featured in Forbes"
+      },
+      {
+        "year": "2025",
+        "org": "US-Japan Council Speaker",
+        "desc": "International AI policy & business forum"
+      }
     ],
     "logosCaption": "Institutions involved",
-    "logos": ["SoftBank", "UTokyo Matsuo Lab", "Waseda University", "Forbes", "US-Japan Council", "UC Berkeley"],
+    "logos": [
+      "SoftBank",
+      "UTokyo Matsuo Lab",
+      "Waseda University",
+      "Forbes",
+      "US-Japan Council",
+      "UC Berkeley"
+    ],
     "sectionTitle": "Research, business, deployment — an AI advisor who has done all three."
   },
   "projectShowcase": {
@@ -165,31 +243,66 @@
     "items": [
       {
         "name": "Sales",
-        "cases": ["Automated company & competitor research", "Pre-meeting scenario generation", "Proposal draft generation", "Meeting notes & follow-up automation", "SFA auto-entry"]
+        "cases": [
+          "Automated company & competitor research",
+          "Pre-meeting scenario generation",
+          "Proposal draft generation",
+          "Meeting notes & follow-up automation",
+          "SFA auto-entry"
+        ]
       },
       {
         "name": "Marketing",
-        "cases": ["Market research & persona generation", "Ad creative generation", "Article & report automation", "Data analysis & legal review"]
+        "cases": [
+          "Market research & persona generation",
+          "Ad creative generation",
+          "Article & report automation",
+          "Data analysis & legal review"
+        ]
       },
       {
         "name": "Customer Support",
-        "cases": ["Response quality standardization", "FAQ / complaint bot", "Training load reduction", "Order & shift analysis"]
+        "cases": [
+          "Response quality standardization",
+          "FAQ / complaint bot",
+          "Training load reduction",
+          "Order & shift analysis"
+        ]
       },
       {
         "name": "PR",
-        "cases": ["Media list creation", "Press release generation", "Interview article generation", "Typo & prohibited expression check"]
+        "cases": [
+          "Media list creation",
+          "Press release generation",
+          "Interview article generation",
+          "Typo & prohibited expression check"
+        ]
       },
       {
         "name": "Corporate Strategy",
-        "cases": ["Market & industry trend research", "SWOT / PEST / 4P analysis", "Earnings report creation", "Management analysis"]
+        "cases": [
+          "Market & industry trend research",
+          "SWOT / PEST / 4P analysis",
+          "Earnings report creation",
+          "Management analysis"
+        ]
       },
       {
         "name": "HR",
-        "cases": ["Job posting creation", "Resume screening support", "Interview support", "Scout email generation"]
+        "cases": [
+          "Job posting creation",
+          "Resume screening support",
+          "Interview support",
+          "Scout email generation"
+        ]
       },
       {
         "name": "Back Office",
-        "cases": ["Internal inquiry reduction (policy / knowledge bot)", "Estimate creation support", "Data entry automation"]
+        "cases": [
+          "Internal inquiry reduction (policy / knowledge bot)",
+          "Estimate creation support",
+          "Data entry automation"
+        ]
       }
     ]
   },
@@ -198,12 +311,30 @@
     "headerThem": "Typical AI consultants",
     "headerUs": "UNCHAIN",
     "rows": [
-      { "them": "Tool introductions only", "us": "Comprehensive technical, business, and risk assessment" },
-      { "them": "Recycled overseas case studies", "us": "Designs adapted to Japanese business practices" },
-      { "them": "Advice lacking implementation depth", "us": "Implementation design grounded in field realities" },
-      { "them": "Selling specific tools", "us": "Vendor-neutral optimal selection" },
-      { "them": "One-off projects", "us": "Continuous partnership and talent development" },
-      { "them": "AI adoption only", "us": "End-to-end support from DX foundation to AI utilization" }
+      {
+        "them": "Tool introductions only",
+        "us": "Comprehensive technical, business, and risk assessment"
+      },
+      {
+        "them": "Recycled overseas case studies",
+        "us": "Designs adapted to Japanese business practices"
+      },
+      {
+        "them": "Advice lacking implementation depth",
+        "us": "Implementation design grounded in field realities"
+      },
+      {
+        "them": "Selling specific tools",
+        "us": "Vendor-neutral optimal selection"
+      },
+      {
+        "them": "One-off projects",
+        "us": "Continuous partnership and talent development"
+      },
+      {
+        "them": "AI adoption only",
+        "us": "End-to-end support from DX foundation to AI utilization"
+      }
     ]
   },
   "pricing": {
@@ -267,9 +398,21 @@
     ],
     "footnote": "* The above is AI advisory retainer pricing. Implementation, PoC, and development work are not included in advisory scope and are contracted separately.",
     "assurances": [
-      { "num": "01", "title": "Vendor Neutral", "desc": "No tool sales agenda. We only provide optimal selection." },
-      { "num": "02", "title": "Security First", "desc": "Forbes-featured AI governance expertise included as standard." },
-      { "num": "03", "title": "Enablement Included", "desc": "Internal AI champion training available as an option." }
+      {
+        "num": "01",
+        "title": "Vendor Neutral",
+        "desc": "No tool sales agenda. We only provide optimal selection."
+      },
+      {
+        "num": "02",
+        "title": "Security First",
+        "desc": "Forbes-featured AI governance expertise included as standard."
+      },
+      {
+        "num": "03",
+        "title": "Enablement Included",
+        "desc": "Internal AI champion training available as an option."
+      }
     ],
     "cta": "Start with a free consultation",
     "targetLabel": "For",
@@ -304,9 +447,18 @@
   "ladder": {
     "title": "Advisory is only the entry point",
     "steps": [
-      { "step": "Step 1", "title": "Continuous partnership as DX/AI advisor" },
-      { "step": "Step 2", "title": "Executive-level AI decision-making partner" },
-      { "step": "Ultimate Goal", "title": "Long-term AI strategy co-creation" }
+      {
+        "step": "Step 1",
+        "title": "Continuous partnership as DX/AI advisor"
+      },
+      {
+        "step": "Step 2",
+        "title": "Executive-level AI decision-making partner"
+      },
+      {
+        "step": "Ultimate Goal",
+        "title": "Long-term AI strategy co-creation"
+      }
     ],
     "closing": "Advisory is the entry point for UNCHAIN to become the AI decision-making layer for Japanese enterprises."
   },
@@ -337,9 +489,32 @@
       "message": "Message",
       "selectPlaceholder": "Select..."
     },
-    "plans": ["Advisory", "Executive", "Enterprise", "Claude Code Setup", "Undecided"],
-    "industries": ["Manufacturing", "Construction & Real Estate", "IT & Telecom", "Finance & Insurance", "Healthcare", "Retail", "Education & Research", "Services", "Other"],
-    "employeeCounts": ["1–50", "51–100", "101–300", "301–1,000", "1,001–5,000", "5,001+"],
+    "plans": [
+      "Advisory",
+      "Executive",
+      "Enterprise",
+      "Claude Code Setup",
+      "Undecided"
+    ],
+    "industries": [
+      "Manufacturing",
+      "Construction & Real Estate",
+      "IT & Telecom",
+      "Finance & Insurance",
+      "Healthcare",
+      "Retail",
+      "Education & Research",
+      "Services",
+      "Other"
+    ],
+    "employeeCounts": [
+      "1–50",
+      "51–100",
+      "101–300",
+      "301–1,000",
+      "1,001–5,000",
+      "5,001+"
+    ],
     "submit": "Submit request",
     "submitting": "Submitting...",
     "freeMailError": "Please use a corporate email address (free email not accepted)",
@@ -392,5 +567,391 @@
       "contact": "Contact"
     },
     "backedBy": "Backed by East Ventures, ANOBAKA  ·  Advised by Mark Ikeno, Allan Frank"
+  },
+  "site": {
+    "nav": {
+      "process": "How it works",
+      "deliverables": "Deliverables",
+      "audience": "Who it's for",
+      "pricing": "Pricing",
+      "faq": "FAQ",
+      "cta": "Free consult (30 min)"
+    },
+    "hero": {
+      "titleLine1": "AI decisions,",
+      "titleLine2": "one step a week.",
+      "subtitle": "No dedicated AI lead required. We work with you from setting priorities to the procedures your team can actually use.",
+      "ctaPrimary": "Free consult (30 min)",
+      "ctaSecondary": "See pricing",
+      "cardKicker": "MONTHLY AI ADVISORY",
+      "cardTitle": "MEMBERSHIP",
+      "cardBrand": "UNCHAIN"
+    },
+    "stats": {
+      "item1Label": "Regular working sessions",
+      "item1Value": "Monthly to weekly",
+      "item2Label": "Chat support",
+      "item2Value": "Unlimited questions",
+      "item3Label": "First-month goal",
+      "item3Value": "Start with one workflow",
+      "item4Label": "From ¥50,000/month",
+      "item4Value": "From ¥50,000/month"
+    },
+    "audience": {
+      "eyebrow": "Who it's for",
+      "titleLine1": "Start from the team",
+      "titleLine2": "you already have.",
+      "note": "One executive, a single department, or the whole company. We adapt to the structure you have today.",
+      "phaseLabel": "First three months",
+      "card1Title": "An owner deciding alone",
+      "card1Desc": "You see the need, but cannot settle on where to begin.",
+      "card1Badge": "Up to 50 employees",
+      "card1Phase": "The owner uses AI directly and rolls it into one workflow.",
+      "card2Title": "A lead driving it part-time",
+      "card2Desc": "You see the need, but cannot settle on where to begin.",
+      "card2Badge": "51-300 staff · one enterprise department",
+      "card2Phase": "We set the order of work and usage rules, then run department training.",
+      "card3Title": "A programme team going company-wide",
+      "card3Desc": "Cross-department coordination and approvals have stalled your AI work.",
+      "card3Badge": "301+ staff · multiple departments",
+      "card3Phase": "We design company policy, department themes, approval flow and impact measurement."
+    },
+    "roadmap": {
+      "eyebrow": "First three months",
+      "title": "In three months, you can decide what comes next.",
+      "note": "One roadmap in three stages, shared by every plan.",
+      "month1Label": "Month 1",
+      "month1Title": "Map the present, pick the theme",
+      "month1Desc": "We set out the target workflow, decision criteria, stakeholders and constraints.",
+      "month2Label": "Month 2",
+      "month2Title": "Trial run and usage rules",
+      "month2Desc": "We trial the chosen workflow and settle the inputs, review steps and approval route.",
+      "month3Label": "Month 3",
+      "month3Title": "Check impact, decide the next move",
+      "month3Desc": "We review the results and decide whether to continue, refine or roll out wider."
+    },
+    "process": {
+      "eyebrow": "How it works",
+      "title": "Share. Decide. Advance.",
+      "note": "Every session settles the next move and carries it into the work before we meet again",
+      "card1Title": "Share the situation",
+      "card1Desc": "We map your challenges and current state, then pick the priority theme to tackle.",
+      "card1Chip1": "First interview",
+      "card1Chip2": "Current-state review",
+      "card1Chip3": "Prioritisation",
+      "card1ArtRole": "Executive",
+      "card2Title": "Decide together",
+      "card2Desc": "We compare options and tools, testing AI to judge feasibility and risk.",
+      "card2Chip1": "Tool comparison",
+      "card2Chip2": "Workflow review",
+      "card2Chip3": "Risk assessment",
+      "card2ArtHeading": "Example discussion in session",
+      "card2ArtQuestion": "Which workflow first?",
+      "card2ArtItem": "Meeting minutes",
+      "card2ArtHigh": "High",
+      "card2ArtMid": "Med",
+      "card2ArtLow": "Low",
+      "card3Title": "Execute and review",
+      "card3Desc": "We assign owners and deadlines, then check progress and results next session.",
+      "card3Chip1": "Execution steps",
+      "card3Chip2": "Owners and deadlines",
+      "card3Chip3": "Progress review",
+      "card3ArtTitle": "AI minutes trial",
+      "card3ArtProgress": "3 of 4 done",
+      "card3ArtTodo": "To do",
+      "card3ArtDoing": "In progress",
+      "card3ArtDone": "Done",
+      "card3ArtTask1": "Pick the trial team",
+      "card3ArtTask2": "Set the criteria",
+      "card2ArtItem2": "Quote drafting",
+      "card2ArtItem3": "Manual updates"
+    },
+    "deliverables": {
+      "eyebrow": "Deliverables",
+      "title": "You keep what you can use.",
+      "subtitle": "Produced to match your theme and plan.",
+      "item1": "AI priority list",
+      "item2": "Prompt templates",
+      "item3": "Internal briefing | issue summary",
+      "item4": "Meeting minutes",
+      "extrasLabel": "Added depending on plan",
+      "extra1": "Monthly report (one A4 page)",
+      "extra2": "Workflow priority list",
+      "extra3": "AI usage rules",
+      "extra4": "Training material",
+      "extra5": "Impact measurement design",
+      "extra6": "Session records"
+    },
+    "comparison": {
+      "eyebrow": "How we differ",
+      "title": "Not training, not a one-off deck. A system where execution keeps going.",
+      "colTraining": "Typical AI training",
+      "colConsulting": "One-off consulting",
+      "colOurs": "AI ADVISOR",
+      "row1Label": "Main purpose",
+      "row1Training": "Acquiring knowledge",
+      "row1Consulting": "Producing a proposal",
+      "row1Ours": "Continuous execution",
+      "row2Label": "Fit to your own workflows",
+      "row2Training": "Mostly generic examples",
+      "row2Consulting": "Up to the proposal",
+      "row2Ours": "Every session",
+      "row3Label": "Follow-up after rollout",
+      "row3Training": "None",
+      "row3Consulting": "Case by case after delivery",
+      "row3Ours": "Reviewed next session",
+      "row4Label": "Who you work with",
+      "row4Training": "A different instructor each time",
+      "row4Consulting": "Staffed per engagement",
+      "row4Ours": "The same lead advisor as a rule",
+      "row5Label": "Tool sales",
+      "row5Training": "Related tools introduced",
+      "row5Consulting": "Partner tools proposed",
+      "row5Ours": "No tool reselling",
+      "ctaNote": "Thirty minutes is enough to see whether this fits you.",
+      "cta": "Book a 30-minute free consult"
+    },
+    "testimonials": {
+      "eyebrow": "Client voices",
+      "title": "The next move becomes clear.",
+      "prev": "Previous",
+      "next": "Next",
+      "item1Role": "Representative Director",
+      "item1Company": "Manufacturing",
+      "item1Quote": "They never push what we do not need, and the options come already narrowed down.",
+      "item2Role": "Executive, Corporate Planning",
+      "item2Company": "Listed-group subsidiary",
+      "item2Quote": "Because the advisor never changes, the proposals stay realistic about how we actually work."
+    },
+    "advisor": {
+      "eyebrow": "Your advisor",
+      "titleLine1": "AI and the business",
+      "titleLine2": "are one question.",
+      "descLine1": "Can it be built? Is it worth the investment?",
+      "descLine2": "Backed by experience in both AI research and company building, we support the call from both sides.",
+      "name": "Christian Park / Park Sunwoo",
+      "role": "CEO & Co-founder, UNCHAIN Inc.",
+      "bullet1": "AI research at the Matsuo Lab, University of Tokyo",
+      "bullet2": "Co-founded an AI startup out of the same lab",
+      "note1": "Regular sessions are led by Park or an UNCHAIN advisor.",
+      "note2": "Note: the above is personal background and does not imply endorsement of this service by any institution or company.",
+      "team": "Specialist members in AI engineering, security and process design join in when needed."
+    },
+    "pricing": {
+      "eyebrow": "Plans",
+      "title": "Three plans. The difference is depth.",
+      "priceLabel": "Monthly",
+      "taxNote": "Excl. tax",
+      "plan3PriceNote": "Quoted to your requirements",
+      "cta": "Talk to us about this plan",
+      "plan1Name": "Executive",
+      "plan1Audience": "Up to 50 employees",
+      "plan1Price": "¥50,000",
+      "plan1Feature1": "Monthly · 60 min",
+      "plan1Feature2": "Reply within 2 business days",
+      "plan1Feature3": "One-page monthly report",
+      "plan2Name": "Department",
+      "plan2Audience": "51-300 staff / one enterprise team",
+      "plan2Price": "¥50,000",
+      "plan2Feature1": "Every two weeks · 60 min",
+      "plan2Feature2": "Reply within 1 business day",
+      "plan2Feature3": "Usage rules + quarterly training",
+      "plan3Name": "Company-wide",
+      "plan3Audience": "301+ staff / multiple departments",
+      "plan3Price": "¥50,000",
+      "plan3Feature1": "Weekly · 90 min + team session",
+      "plan3Feature2": "Reply within 1 business day",
+      "plan3Feature3": "Monthly training + impact model",
+      "tableFeature": "Feature",
+      "rowPriceLabel": "Monthly fee (excl. tax)",
+      "rowPricePlan1": "From ¥50,000",
+      "rowPricePlan2": "From ¥150,000",
+      "rowPricePlan3": "Individual quote",
+      "rowPeopleLabel": "Participants",
+      "rowPeoplePlan1": "1-2 people",
+      "rowPeoplePlan2": "Up to 10 people",
+      "rowPeoplePlan3": "Leadership + up to 3 teams",
+      "rowDeptsLabel": "Departments covered",
+      "rowDeptsPlan1": "1 department",
+      "rowDeptsPlan2": "1 department",
+      "rowDeptsPlan3": "Up to 3 departments",
+      "rowChatLabel": "Chat support",
+      "rowChatPlan1": "Reply within 2 business days as a rule (scope and hours stated in the contract)",
+      "rowChatPlan2": "Reply within 1 business day as a rule (scope and hours stated in the contract)",
+      "rowChatPlan3": "Reply within 1 business day as a rule (scope and hours stated in the contract)",
+      "row1Label": "Primary users",
+      "row1Plan1": "1-2 executives",
+      "row1Plan2": "One team · up to 10 people",
+      "row1Plan3": "Leadership + up to 3 teams",
+      "row2Label": "Sessions",
+      "row2Plan1": "Monthly · 60 min",
+      "row2Plan2": "Every two weeks · 60 min",
+      "row2Plan3": "Weekly · 90 min + team session",
+      "row3Label": "Priorities / usage rules",
+      "row3Plan1": "Discussed in session",
+      "row3Plan2": "Documented",
+      "row3Plan3": "Documented",
+      "row4Label": "Training",
+      "row4Plan1": "-",
+      "row4Plan2": "Quarterly · up to 10 people",
+      "row4Plan3": "Monthly · up to 50 people",
+      "row5Label": "Impact measurement",
+      "row5Plan1": "-",
+      "row5Plan2": "-",
+      "row5Plan3": "Model + board summary",
+      "plan3Cta": "Discuss company-wide requirements",
+      "termsTitle": "Contract terms",
+      "term1Label": "Setup fee",
+      "term1Value": "None. If any separate cost applies, we quote it before starting.",
+      "term2Label": "Minimum term",
+      "term2Value": "Three months, so the first three-month roadmap can run its full cycle.",
+      "term3Label": "Cancellation",
+      "term3Value": "From the fourth month you may cancel monthly, with notice by the end of the prior month.",
+      "term4Label": "Plan changes",
+      "term4Value": "Changeable monthly, applied from the following month.",
+      "term5Label": "Out of scope",
+      "term5Value": "System development, PoC implementation, hands-on configuration, final approval and operational responsibility are out of scope.",
+      "term6Label": "Rights to deliverables",
+      "term6Value": "Deliverables produced within your contract are yours to use freely inside your company. Please ask us before redistributing or reselling them externally.",
+      "term7Label": "Confidentiality",
+      "term7Value": "We sign an NDA before any discussion, on your paper or ours.",
+      "term8Label": "Payment",
+      "term8Value": "Monthly in advance, payable within the month the invoice is issued."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Frequently asked",
+      "q1": "Is it advice only?",
+      "a1": "No. We produce workflow guides, prompts and internal briefing material, and support setup over screen share. Production operation and approvals stay with your team. System development and PoC implementation are out of scope.",
+      "q2": "Can we start without an AI lead?",
+      "a2": "Yes. The service assumes you have no dedicated AI lead. The first session maps your current state and priorities, then breaks the work down into steps the owner or your point person can run.",
+      "q3": "Will our information go into external AI?",
+      "a3": "No confidential information goes into external AI without your approval. We agree the scope up front and document which tools may be used and what may be entered.",
+      "q4": "Can we discuss security too?",
+      "a4": "Yes. We cover operational questions such as AI usage rules, permissions, logging and internal approval flow. Audit response itself and system implementation work are out of scope.",
+      "q5": "How is this different from consulting or training?",
+      "a5": "We work alongside you on a regular cadence, advancing decisions and execution every time. Rather than a one-off proposal deck or a lecture, we settle the next move and review its results next session.",
+      "q6": "Will you push a particular tool on us?",
+      "a6": "We are not a reseller for any vendor. Tools are compared on business requirements and cost, and “do not adopt it” is a recommendation we will make.",
+      "q7": "Can we sign an NDA first?",
+      "a7": "Yes. We are happy to sign before any discussion, on your paper or ours. Just let us know before the free consultation.",
+      "q8": "Can we pause or change partway through?",
+      "a8": "Yes. Plans can be changed or paused month to month, so you can adjust the depth of support as your structure changes.",
+      "q9": "What industries and workflows do you cover?",
+      "a9": "We do not restrict by industry. Most engagements start with document-and-information work: meeting minutes, quote and proposal drafts, manual revisions, inbound enquiries and tidying internal material.",
+      "q10": "Who should attend the sessions?",
+      "a10": "We recommend the decision maker plus the people who actually do the work. The Executive plan suits 1-2 executives, the Department plan one team of up to 10, and the Company-wide plan leadership together with each department lead.",
+      "q11": "What does chat support cover, and how fast do you reply?",
+      "a11": "It covers questions about the themes under your contract. Replies come within 2 business days as a rule on the Executive plan, and within 1 business day on the Department and Company-wide plans, during weekday business hours. Scope and hours are stated in the contract.",
+      "q12": "Can you work with us other than online?",
+      "a12": "Regular sessions run online as a rule. We also visit in person where it helps, such as training or a kick-off. Visit frequency and who covers the cost are agreed individually at contract time.",
+      "q13": "Could our advisor change partway through?",
+      "a13": "Each client is assigned a lead advisor, and as a rule the same person continues throughout. If a change is unavoidable, the reasoning and execution status are handed over within the team.",
+      "q14": "How do you handle personal and confidential information?",
+      "a14": "We use what you share only as far as the work requires, and handle it under the terms of the NDA. Where personal or confidential information would go into an external AI, we agree the scope in advance and never enter anything unapproved. Where material is stored and who may access it are also agreed at contract time.",
+      "q15": "How many months is the contract?",
+      "a15": "The minimum term is three months, so the first three months can run a full cycle of mapping, trial and impact review. From the fourth month you continue month to month.",
+      "q16": "Are there any costs beyond the monthly fee?",
+      "a16": "There is no setup fee. The monthly fee covers regular sessions, chat support and the deliverables. AI tool licences, travel for on-site visits, and any work beyond the contracted scope are quoted before we begin.",
+      "q17": "Can we use the deliverables freely inside our company?",
+      "a17": "Yes. Deliverables produced within your contract are yours to use freely inside your company. Please ask us first if you need to redistribute or resell them externally."
+    },
+    "ctaBanner": {
+      "titleLine1": "Give us 30 minutes to hear",
+      "titleLine2": "where you stand.",
+      "descLine1": "Your challenge does not have to be defined yet.",
+      "descLine2": "From where you are today, we will propose what to start with and the plan that fits.",
+      "primary": "Book a free consult (30 min)",
+      "secondary": "See pricing plans",
+      "consent": "Please review our privacy policy and contact us on the understanding that you agree to it."
+    },
+    "contactPage": {
+      "metaTitle": "Book a free consult (30 min) | AI ADVISOR by UNCHAIN",
+      "metaDescription": "Tell us where you stand today and pick a 30-minute online slot. No preparation needed, no obligation to continue.",
+      "eyebrow": "Free consult",
+      "titleLine1": "Give us 30 minutes.",
+      "titleLine2": "We will show you where to start.",
+      "subtitle": "A 30-minute online session with the advisor who would work with you. Your challenge does not have to be defined yet — tell us where you are today and we will propose what to start with and the plan that fits.",
+      "point1Title": "30 minutes, nothing to prepare",
+      "point1Desc": "Come as you are. We will ask about your current setup and where AI is stuck.",
+      "point2Title": "NDA before any detail",
+      "point2Desc": "We sign an NDA on your paper or ours before we discuss anything specific.",
+      "point3Title": "You leave with a first step",
+      "point3Desc": "One priority you can act on and the plan that fits — no obligation to continue.",
+      "emailDirect": "Prefer email?",
+      "step1": "Your details",
+      "step2": "Pick a time",
+      "formTitle": "Request your consult",
+      "formDesc": "Tell us a bit about you, then pick a time on the next step.",
+      "fields": {
+        "name": "Your name",
+        "company": "Company name",
+        "email": "Work email",
+        "role": "Job title",
+        "employees": "Company size",
+        "plan": "Plan of interest",
+        "message": "Anything you want us to know"
+      },
+      "placeholders": {
+        "name": "Jane Smith",
+        "company": "Acme Inc.",
+        "email": "jane@company.com",
+        "role": "Head of Corporate Strategy",
+        "message": "Your team, the use case you have in mind, or specific questions…"
+      },
+      "optional": "(optional)",
+      "selectPlaceholder": "Select…",
+      "employeeOptions": {
+        "e1": "1–50",
+        "e2": "51–100",
+        "e3": "101–300",
+        "e4": "301–1,000",
+        "e5": "1,001–5,000",
+        "e6": "5,001+"
+      },
+      "planOptions": {
+        "p1": "Executive",
+        "p2": "Department",
+        "p3": "Company-wide",
+        "p0": "Not decided yet"
+      },
+      "errors": {
+        "required": "This field is required.",
+        "email": "Please enter a valid email address.",
+        "select": "Please choose an option.",
+        "freeMail": "Please use your work email address (free email not accepted)."
+      },
+      "submit": "Continue to pick a time",
+      "submitting": "Sending…",
+      "submitError": "We could not send your details. Please try again, or email contact@the-unchain.com.",
+      "consent": "By submitting, you agree to be contacted about this consult. Your details are handled under our privacy policy.",
+      "doneTitle": "Thanks, one last step!",
+      "doneDesc": "We have received your details. Pick a time below and your consult is booked.",
+      "meetingLength": "30 min",
+      "meetingFormat": "Online",
+      "pickTime": "Pick a time",
+      "doneFallback": "Cannot find a slot that works? We will reach out within 1 business day to arrange one."
+    },
+    "footer": {
+      "navTitle": "Navigation",
+      "legalTitle": "Legal",
+      "socialTitle": "Follow us",
+      "privacy": "Privacy policy",
+      "terms": "Terms of use",
+      "security": "Information security policy",
+      "x": "X/Twitter",
+      "linkedin": "LinkedIn",
+      "medium": "Medium",
+      "copyright": "© 2026 AI Advisor All rights reserved.",
+      "companyTitle": "Company",
+      "companyNameLabel": "Company name",
+      "companyName": "UNCHAIN Inc.",
+      "addressLabel": "Address",
+      "address": "Tokyo, Japan",
+      "repLabel": "Representative",
+      "rep": "Christian Park / Park Sunwoo",
+      "contactLabel": "Contact",
+      "contact": "contact@the-unchain.com"
+    }
   }
 }

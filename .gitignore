@@ -40,3 +40,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 CLAUDE.md
+
+# Figma exports — design source of truth lives in Figma, not in the app bundle.
+# Kept locally for re-slicing artwork; never served, never committed.
+/design-source
+
+# npm lockfile — this project uses pnpm; pnpm-lock.yaml is the source of truth
+package-lock.json

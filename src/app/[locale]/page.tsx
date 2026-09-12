@@ -1,31 +1,39 @@
-"use client";
+import { Navbar } from "@/components/site/Navbar";
+import { Hero } from "@/components/site/Hero";
+import { StatsStrip } from "@/components/site/StatsStrip";
+import { AudienceSection } from "@/components/site/AudienceSection";
+import { RoadmapSection } from "@/components/site/RoadmapSection";
+import { ProcessSection } from "@/components/site/ProcessSection";
+import { DeliverablesSection } from "@/components/site/DeliverablesSection";
+import { ComparisonSection } from "@/components/site/ComparisonSection";
+import { AdvisorSection } from "@/components/site/AdvisorSection";
+import { PricingSection } from "@/components/site/PricingSection";
+import { FaqSection } from "@/components/site/FaqSection";
+import { CtaBanner } from "@/components/site/CtaBanner";
+import { Footer } from "@/components/site/Footer";
 
-import { useState } from "react";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
-import { HeroSection } from "@/components/sections/HeroSection";
-import { ProblemSection } from "@/components/sections/ProblemSection";
-import { PillarsSection } from "@/components/sections/PillarsSection";
-import { WhyChosenSection } from "@/components/sections/WhyChosenSection";
-import { ProjectShowcaseSection } from "@/components/sections/ProjectShowcaseSection";
-import { FounderSection } from "@/components/sections/FounderSection";
-import { PricingSection } from "@/components/sections/PricingSection";
-import { ContactSection } from "@/components/sections/ContactSection";
-
+/**
+ * ヒーロー ＞ 対象企業 ＞ 最初の3カ月 ＞ ご支援の流れ ＞ 成果物 ＞
+ * 他の選択肢との違い ＞ 導入事例 ＞ 支援体制 ＞ 料金 ＞ FAQ ＞ 最終CTA・フッター
+ *
+ * 導入事例（TestimonialsSection）は、掲載許諾・原文確認・数値根拠が揃うまで非表示。
+ * 公開時は ComparisonSection と AdvisorSection の間に戻す。
+ */
 export default function Home() {
-  const [selectedPlan, setSelectedPlan] = useState("");
-
   return (
-    <div className="min-h-screen bg-bg-primary font-sans">
+    <div className="min-h-screen bg-white font-sans">
       <Navbar />
-      <HeroSection />
-      <ProblemSection />
-      <PillarsSection />
-      <WhyChosenSection />
-      <ProjectShowcaseSection />
-      <FounderSection />
-      <PricingSection onSelectPlan={setSelectedPlan} />
-      <ContactSection selectedPlan={selectedPlan} />
+      <Hero />
+      <StatsStrip />
+      <AudienceSection />
+      <RoadmapSection />
+      <ProcessSection />
+      <DeliverablesSection />
+      <ComparisonSection />
+      <AdvisorSection />
+      <PricingSection />
+      <FaqSection />
+      <CtaBanner />
       <Footer />
     </div>
   );
