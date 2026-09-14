@@ -952,6 +952,11 @@
       "rep": "Christian Park / Park Sunwoo",
       "contactLabel": "Contact",
       "contact": "contact@the-unchain.com"
+    },
+    "carousel": {
+      "prev": "Previous",
+      "next": "Next",
+      "goTo": "Go to item {n}"
     }
   }
 }

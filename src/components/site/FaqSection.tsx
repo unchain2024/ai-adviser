@@ -16,7 +16,7 @@ export function FaqSection() {
         <div className="grid gap-12 lg:grid-cols-[466px_1fr] lg:gap-x-0">
           <div className="lg:pt-[32px]">
             <Eyebrow>{t("eyebrow")}</Eyebrow>
-            <h2 className="mt-[22px] text-[34px] leading-[1.15] font-bold tracking-[-0.01em] text-black md:text-[46px] lg:text-[55px]">
+            <h2 className="mt-[22px] text-[28px] leading-[1.15] font-bold tracking-[-0.01em] text-black sm:text-[34px] md:text-[46px] lg:text-[55px]">
               {t("title")}
             </h2>
           </div>

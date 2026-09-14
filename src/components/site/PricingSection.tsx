@@ -130,7 +130,7 @@ export function PricingSection() {
       <Container>
         <div className="text-center">
           <Eyebrow className="mx-auto">{t("eyebrow")}</Eyebrow>
-          <h2 className="mt-[22px] text-[34px] leading-[1.15] font-bold tracking-[-0.01em] text-black [line-break:strict] [word-break:keep-all] md:text-[46px] lg:text-[55px]">
+          <h2 className="mt-[22px] text-[28px] leading-[1.15] font-bold tracking-[-0.01em] text-black [line-break:strict] [overflow-wrap:anywhere] [word-break:keep-all] sm:text-[34px] md:text-[46px] lg:text-[55px]">
             {t("title")}
           </h2>
         </div>
@@ -140,7 +140,7 @@ export function PricingSection() {
             plan.featured ? (
               <div
                 key={plan.name}
-                className="order-first rounded-[20px] p-[8px] md:order-none"
+                className="rounded-[20px] p-[8px]"
                 style={{ background: "var(--grad-brand)" }}
               >
                 <div className="rounded-[16px] bg-white px-[32px] pt-[30px] pb-[30px]">

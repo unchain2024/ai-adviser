@@ -14,7 +14,7 @@ export function ComparisonSection() {
       <Container>
         <div className="text-center">
           <Eyebrow className="mx-auto">{t("eyebrow")}</Eyebrow>
-          <h2 className="mx-auto mt-[22px] max-w-[900px] text-[34px] leading-[1.15] font-bold tracking-[-0.01em] text-black [line-break:strict] [word-break:keep-all] md:text-[46px] lg:text-[55px]">
+          <h2 className="mx-auto mt-[22px] max-w-[900px] text-[28px] leading-[1.15] font-bold tracking-[-0.01em] text-black [line-break:strict] [overflow-wrap:anywhere] [word-break:keep-all] sm:text-[34px] md:text-[46px] lg:text-[55px]">
             {t("title")}
           </h2>
         </div>
@@ -58,10 +58,10 @@ export function ComparisonSection() {
 
         {/* second of the three CTAs: hero / here / final banner */}
         <div className="mt-[48px] flex flex-col items-center gap-[16px]">
-          <p className="text-[16px] leading-[23px] text-[#51525C]">{t("ctaNote")}</p>
+          <p className="text-center text-[16px] leading-[23px] text-[#51525C]">{t("ctaNote")}</p>
           <Link
             href={contactHref(locale)}
-            className="btn-dark inline-flex h-[50px] items-center justify-center rounded-[10px] px-[17px] text-[16px] font-medium"
+            className="btn-dark inline-flex h-[50px] w-full items-center justify-center rounded-[10px] px-[17px] text-center text-[16px] font-medium sm:w-auto"
           >
             {t("cta")}
           </Link>

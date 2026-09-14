@@ -14,7 +14,7 @@ export function StatsStrip() {
   return (
     <section className="border-b border-[#E4E4E7] bg-white">
       <Container>
-        <div className="grid grid-cols-2 gap-x-[30px] gap-y-8 py-[34px] lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-x-[30px] gap-y-8 py-[34px] sm:grid-cols-2 lg:grid-cols-4">
           {ITEMS.map((item) => (
             <div key={item.label} className="flex items-start gap-[16px]">
               <span

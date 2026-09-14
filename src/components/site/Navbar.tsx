@@ -26,10 +26,16 @@ export function Navbar() {
     <div className="sticky top-0 z-50 pt-4">
       <Container>
         <nav className="rounded-[16px] bg-white shadow-[0_2px_10px_rgba(0,0,0,0.06)] ring-1 ring-[#E4E4E7]">
-          <div className="flex h-[62px] items-center pr-[17px] pl-6">
+          <div className="flex h-[62px] items-center pr-[11px] pl-4 sm:pr-[17px] sm:pl-6">
             <SectionLink href="#top" className="flex shrink-0 items-center" aria-label="AI ADVISOR">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/art/logo-dark.svg" alt="AI ADVISOR by UNCHAIN" width={108} height={29} />
+              <img
+                src="/art/logo-dark.svg"
+                alt="AI ADVISOR by UNCHAIN"
+                width={108}
+                height={29}
+                className="w-[92px] sm:w-[108px]"
+              />
             </SectionLink>
 
             <span className="mx-[32px] hidden h-[17px] w-px bg-[#E4E4E7] lg:block" aria-hidden="true" />
@@ -46,7 +52,7 @@ export function Navbar() {
               ))}
             </div>
 
-            <div className="ml-auto flex items-center gap-4">
+            <div className="ml-auto flex items-center gap-2 sm:gap-4">
               <LanguageToggle />
               <Link
                 href={contactHref(locale)}
@@ -56,16 +62,16 @@ export function Navbar() {
               </Link>
               <button
                 type="button"
-                className="lg:hidden"
+                className="btn-dark flex h-[40px] w-[40px] items-center justify-center rounded-[10px] lg:hidden"
                 aria-expanded={open}
                 aria-label="Menu"
                 onClick={() => setOpen(!open)}
               >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   {open ? (
-                    <path d="M6 6l12 12M18 6L6 18" stroke="#131316" strokeWidth="2" strokeLinecap="round" />
+                    <path d="M6 6l12 12M18 6L6 18" stroke="#fff" strokeWidth="2" strokeLinecap="round" />
                   ) : (
-                    <path d="M4 7h16M4 12h16M4 17h16" stroke="#131316" strokeWidth="2" strokeLinecap="round" />
+                    <path d="M4 7h16M4 12h16M4 17h16" stroke="#fff" strokeWidth="2" strokeLinecap="round" />
                   )}
                 </svg>
               </button>
@@ -73,13 +79,13 @@ export function Navbar() {
           </div>
 
           {open && (
-            <div className="border-t border-[#E4E4E7] px-6 pt-2 pb-5 lg:hidden">
+            <div className="border-t border-[#E4E4E7] px-4 pt-2 pb-5 sm:px-6 lg:hidden">
               {LINKS.map((l) => (
                 <SectionLink
                   key={l.key}
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="block py-3 text-[15px] text-[#131316]"
+                  className="flex min-h-[44px] items-center text-[15px] text-[#131316]"
                 >
                   {t(l.key)}
                 </SectionLink>

@@ -11,9 +11,11 @@ export function CtaBanner() {
     <section id="contact" className="scroll-mt-[78px] bg-white pt-[80px] pb-[80px]">
       <Container>
         <div
-          className="relative overflow-hidden rounded-[20px] px-[24px] py-[56px] sm:px-[60px] lg:min-h-[406px]"
+          className="relative overflow-hidden rounded-[20px] px-[24px] pt-[56px] pb-[58%] sm:px-[60px] sm:pb-[56px] lg:min-h-[406px]"
           style={{ background: "var(--grad-brand)" }}
         >
+          {/* The canvas runs the compass down the right edge on desktop and parks it
+              across the bottom of the card on mobile, with the copy layered over it. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/art/compass-banner.svg"
@@ -21,9 +23,16 @@ export function CtaBanner() {
             aria-hidden="true"
             className="pointer-events-none absolute top-0 right-0 hidden h-full lg:block"
           />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/art/compass-banner.svg"
+            alt=""
+            aria-hidden="true"
+            className="pointer-events-none absolute -right-[8%] -bottom-[2%] w-[72%] max-w-none sm:hidden"
+          />
 
           <div className="relative lg:pt-[10px]">
-            <h2 className="max-w-[660px] text-[32px] leading-[1.2] font-bold tracking-[-0.01em] text-white [line-break:strict] [word-break:keep-all] md:text-[40px] lg:text-[46px] lg:leading-[55px]">
+            <h2 className="max-w-[660px] text-[22px] leading-[1.25] font-bold tracking-[-0.01em] text-white [line-break:strict] [overflow-wrap:anywhere] [word-break:keep-all] sm:text-[32px] sm:leading-[1.2] md:text-[40px] lg:text-[46px] lg:leading-[55px]">
               {t("titleLine1")}
               <br />
               {t("titleLine2")}
@@ -33,16 +42,16 @@ export function CtaBanner() {
               <br />
               {t("descLine2")}
             </p>
-            <div className="mt-[65px] flex flex-wrap items-center gap-[16px]">
+            <div className="mt-[40px] flex w-full flex-col items-stretch gap-[16px] sm:mt-[65px] sm:w-auto sm:flex-row sm:flex-wrap sm:items-center">
               <Link
                 href={contactHref(locale)}
-                className="btn-light inline-flex h-[50px] items-center justify-center rounded-[10px] px-[18px] text-[16px] font-medium"
+                className="btn-light inline-flex h-[50px] w-full items-center justify-center rounded-[10px] px-[18px] text-center text-[16px] font-medium sm:w-auto"
               >
                 {t("primary")}
               </Link>
               <SectionLink
                 href="#pricing"
-                className="inline-flex h-[50px] items-center justify-center rounded-[10px] bg-white/20 px-[18px] text-[16px] font-medium text-white transition-colors hover:bg-white/30"
+                className="inline-flex h-[50px] w-full items-center justify-center rounded-[10px] bg-white/20 px-[18px] text-center text-[16px] font-medium text-white transition-colors hover:bg-white/30 sm:w-auto"
               >
                 {t("secondary")}
               </SectionLink>

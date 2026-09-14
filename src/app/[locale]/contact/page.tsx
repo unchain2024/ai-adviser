@@ -69,7 +69,7 @@ export default async function ContactPage({ params, searchParams }: Props) {
           <div className="grid gap-[48px] pt-[130px] pb-[90px] lg:grid-cols-[1fr_520px] lg:gap-[80px] lg:pt-[170px] lg:pb-[120px]">
             <div className="lg:pt-[10px]">
               <Eyebrow>{t("eyebrow")}</Eyebrow>
-              <h1 className="mt-[22px] text-[36px] leading-[1.17] font-bold tracking-[-0.01em] text-[#131316] [line-break:strict] [word-break:keep-all] md:text-[46px] lg:text-[52px] lg:leading-[60px]">
+              <h1 className="mt-[22px] text-[28px] leading-[1.17] font-bold tracking-[-0.01em] text-[#131316] [line-break:strict] [overflow-wrap:anywhere] [word-break:keep-all] sm:text-[36px] md:text-[46px] lg:text-[52px] lg:leading-[60px]">
                 {t("titleLine1")}
                 <br />
                 {t("titleLine2")}
