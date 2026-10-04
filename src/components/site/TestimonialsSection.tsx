@@ -29,11 +29,11 @@ export function TestimonialsSection() {
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
           <div>
             <Eyebrow className="text-white">{t("eyebrow")}</Eyebrow>
-            <h2 className="mt-[22px] text-[34px] leading-[1.15] font-bold tracking-[-0.01em] text-white md:text-[46px] lg:text-[55px]">
+            <h2 className="mt-[22px] text-[28px] leading-[1.15] font-bold tracking-[-0.01em] text-white sm:text-[34px] md:text-[46px] lg:text-[55px]">
               {t("title")}
             </h2>
           </div>
-          <div className="flex shrink-0 gap-[16px] sm:mt-[47px]">
+          <div className="order-last flex shrink-0 justify-center gap-[16px] sm:order-none sm:mt-[47px] sm:justify-start">
             <button
               type="button"
               aria-label={t("prev")}
@@ -84,7 +84,7 @@ export function TestimonialsSection() {
           {ITEMS.map((item) => (
             <figure
               key={item.role + item.quote}
-              className="flex h-[450px] w-[500px] shrink-0 snap-start flex-col rounded-[20px] bg-[#18181B] p-[32px] ring-1 ring-white/10"
+              className="flex h-auto min-h-[420px] w-[86vw] max-w-[500px] shrink-0 snap-start flex-col rounded-[20px] bg-[#18181B] p-[24px] ring-1 ring-white/10 sm:h-[450px] sm:p-[32px]"
             >
               <figcaption className="flex items-center gap-[16px]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -107,7 +107,7 @@ export function TestimonialsSection() {
               <div className="mt-auto">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/art/s5-quote.svg" alt="" aria-hidden="true" width={36} height={33} />
-                <blockquote className="mt-[23px] text-[30px] leading-[36px] font-normal text-white">
+                <blockquote className="mt-[23px] text-[22px] leading-[30px] font-normal text-white sm:text-[30px] sm:leading-[36px]">
                   {t(item.quote)}
                 </blockquote>
               </div>

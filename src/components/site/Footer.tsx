@@ -43,13 +43,12 @@ export function Footer() {
         src="/art/compass-footer.svg"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute bottom-0 left-0 hidden lg:block"
-        style={{ top: "170px" }}
+        className="pointer-events-none absolute bottom-0 left-1/2 w-[275px] -translate-x-1/2 opacity-60 lg:top-[170px] lg:bottom-auto lg:left-0 lg:w-auto lg:translate-x-0 lg:opacity-100"
       />
 
       <Container className="relative">
-        <div className="grid gap-12 lg:grid-cols-[1fr_183px_254px_170px] lg:gap-x-0">
-          <div>
+        <div className="grid grid-cols-2 gap-x-6 gap-y-12 lg:grid-cols-[1fr_183px_254px_170px] lg:gap-x-0">
+          <div className="col-span-2 lg:col-span-1">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/art/logo-light.svg"
@@ -82,12 +81,12 @@ export function Footer() {
 
           <nav>
             <Eyebrow className="text-white">{tf("navTitle")}</Eyebrow>
-            <ul className="mt-[21px] space-y-[23px] leading-none">
+            <ul className="mt-[21px] space-y-[23px]">
               {NAV.map((l) => (
                 <li key={l.key}>
                   <SectionLink
                     href={l.href}
-                    className="text-[16px] leading-none text-white transition-opacity hover:opacity-70"
+                    className="text-[16px] leading-[1.4] text-white transition-opacity hover:opacity-70 lg:leading-none"
                   >
                     {tn(l.key)}
                   </SectionLink>
@@ -98,14 +97,14 @@ export function Footer() {
 
           <nav>
             <Eyebrow className="text-white">{tf("legalTitle")}</Eyebrow>
-            <ul className="mt-[21px] space-y-[23px] leading-none">
+            <ul className="mt-[21px] space-y-[23px]">
               {LEGAL.map((l) => (
                 <li key={l.key}>
                   <a
                     href={`https://www.the-unchain.com/${locale}/${l.path}`}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="text-[16px] leading-none text-white transition-opacity hover:opacity-70"
+                    className="text-[16px] leading-[1.4] text-white transition-opacity hover:opacity-70 lg:leading-none"
                   >
                     {tf(l.key)}
                   </a>
@@ -114,7 +113,7 @@ export function Footer() {
             </ul>
           </nav>
 
-          <div>
+          <div className="col-span-2 lg:col-span-1">
             <Eyebrow className="text-white">{tf("socialTitle")}</Eyebrow>
             <ul className="mt-[19px] space-y-[16px]">
               {SOCIAL.map((s) => (

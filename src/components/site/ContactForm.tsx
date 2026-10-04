@@ -81,7 +81,7 @@ function StepDot({
 }
 
 const inputCls =
-  "mt-[8px] h-[46px] w-full rounded-[10px] bg-white px-[14px] text-[15px] text-[#131316] ring-1 ring-[#E4E4E7] outline-none transition-shadow placeholder:text-[#A0A0AB] focus:ring-2 focus:ring-[#004DFF]";
+  "mt-[8px] h-[46px] w-full rounded-[10px] bg-white px-[14px] text-[16px] text-[#131316] sm:text-[15px] ring-1 ring-[#E4E4E7] outline-none transition-shadow placeholder:text-[#A0A0AB] focus:ring-2 focus:ring-[#004DFF]";
 const labelCls = "block text-[14px] leading-none font-medium text-[#131316]";
 
 function Field({

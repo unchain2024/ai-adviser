@@ -45,8 +45,8 @@ export function Hero() {
       <HeroBackdrop />
 
       <Container className="relative z-10">
-        <div className="flex flex-col items-center pt-[190px] pb-[150px] text-center lg:pt-[334px] lg:pb-[233px]">
-          <h1 className="text-[34px] leading-[1.18] font-bold text-[#131316] [line-break:strict] [word-break:keep-all] md:text-[48px] lg:text-[61px] lg:leading-[1.06]">
+        <div className="flex flex-col items-center pt-[150px] pb-[110px] text-center sm:pt-[190px] sm:pb-[150px] lg:pt-[334px] lg:pb-[233px]">
+          <h1 className="text-[28px] leading-[1.18] font-bold text-[#131316] [line-break:strict] [overflow-wrap:anywhere] [word-break:keep-all] sm:text-[34px] md:text-[48px] lg:text-[61px] lg:leading-[1.06]">
             {t("titleLine1")}
             {/* One line on the design canvas. Japanese joins with no separator —
                 the gap is the 、's own trailing space, which is what the canvas
@@ -61,16 +61,16 @@ export function Hero() {
             {t("subtitle")}
           </p>
 
-          <div className="mt-[33px] flex flex-wrap items-center justify-center gap-[16px]">
+          <div className="mt-[33px] flex w-full flex-col items-center gap-[16px] sm:w-auto sm:flex-row sm:flex-wrap sm:justify-center">
             <Link
               href={contactHref(locale)}
-              className="btn-dark inline-flex h-[50px] items-center justify-center rounded-[10px] px-[17px] text-[16px] font-medium"
+              className="btn-dark inline-flex h-[50px] w-full items-center justify-center rounded-[10px] px-[17px] text-[16px] font-medium sm:w-auto"
             >
               {t("ctaPrimary")}
             </Link>
             <SectionLink
               href="#process"
-              className="btn-light inline-flex h-[50px] items-center justify-center rounded-[10px] px-[17px] text-[16px] font-medium"
+              className="btn-light inline-flex h-[50px] w-full items-center justify-center rounded-[10px] px-[17px] text-[16px] font-medium sm:w-auto"
             >
               {t("ctaSecondary")}
             </SectionLink>

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Noto_Sans_JP, Inter, DM_Sans } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
@@ -25,6 +25,20 @@ const dmSans = DM_Sans({
 
 type Props = {
   params: Promise<{ locale: string }>;
+};
+
+/**
+ * Emits <meta name="color-scheme" content="light"> and a light theme-color, so the
+ * browser chrome and any UA-level dark treatment stay light on every device. The
+ * matching `color-scheme: only light` lives in globals.css.
+ * `viewportFit: "cover"` lets the layout reach into the safe areas on notched phones.
+ */
+export const viewport: Viewport = {
+  colorScheme: "light",
+  themeColor: "#ffffff",
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

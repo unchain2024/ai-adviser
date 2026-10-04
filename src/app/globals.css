@@ -49,7 +49,15 @@
 
 html {
   scroll-behavior: smooth;
-  color-scheme: light;
+  /* `only light` — not plain `light` — is what actually forbids a user agent from
+     re-tinting the page. Chrome Android's auto dark theme, Samsung Internet's dark
+     mode and similar treat bare `light` as a hint they may override; `only` opts the
+     document out entirely, so the site renders identically however the OS or browser
+     is set. Paired with the `colorScheme` viewport export in [locale]/layout.tsx. */
+  color-scheme: only light;
+  /* Stops iOS Safari inflating body copy when the phone is rotated to landscape. */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -58,6 +66,67 @@ body {
   background: #ffffff;
   color: var(--color-ink);
   font-family: var(--font-sans);
+  /* `clip`, never `hidden`: `hidden` would make body a scroll container and break the
+     sticky navbar. A net for sub-pixel bleed only — real overflows are fixed at source. */
+  overflow-x: clip;
+}
+
+/* Keep UA-drawn controls (select popup, autofill, the caret) light too. */
+input,
+select,
+textarea,
+button {
+  color-scheme: only light;
+}
+
+/* ── Dark-mode lock ────────────────────────────────────────────────────────
+   The site has exactly one appearance. Two defences, because `color-scheme`
+   alone does not stop every browser:
+
+   1. `color-scheme: only light` above tells the UA the document has no dark
+      variant, which is the documented opt-out from Chrome Android's Auto Dark
+      Theme and Samsung Internet's dark mode.
+   2. Browsers also skip auto-darkening a page that already handles dark mode
+      itself. So we declare a dark block — and set it to exactly the same values
+      as light. The page says "I have a dark theme"; that theme is the light one.
+
+   Every token is repeated verbatim from :root. If a colour is ever added or
+   changed above, change it here too, or dark mode will drift. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --grad-brand: linear-gradient(180deg, #4bb3fa 0%, #004dff 100%);
+    --grad-dark: linear-gradient(180deg, #373737 0%, #000000 100%);
+    --grad-chip: linear-gradient(180deg, #fafafa 0%, #f0f0f0 100%);
+    --grad-hero: linear-gradient(180deg, #fafafa 0%, #f0f0f0 100%);
+    --grad-check: linear-gradient(180deg, #c3f1bb 0%, #36b038 100%);
+    --dots-hero: radial-gradient(
+      circle at 1.62px 1.62px,
+      rgba(135, 135, 135, 0.1) 1.62px,
+      transparent 1.63px
+    );
+  }
+
+  html {
+    color-scheme: only light;
+  }
+
+  body {
+    background: #ffffff;
+    color: var(--color-ink);
+  }
+
+  .btn-dark {
+    background: var(--grad-dark);
+    color: #ffffff;
+  }
+  .btn-light {
+    background: #ffffff;
+    color: var(--color-ink);
+  }
+  .btn-chip {
+    background: var(--grad-chip);
+    color: var(--color-ink);
+  }
 }
 
 ::selection {

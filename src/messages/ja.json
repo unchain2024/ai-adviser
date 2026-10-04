@@ -952,6 +952,11 @@
       "contactLabel": "問い合わせ先",
       "contact": "contact@the-unchain.com",
       "copyright": "© 2026 AI Advisor All rights reserved."
+    },
+    "carousel": {
+      "prev": "前へ",
+      "next": "次へ",
+      "goTo": "{n}件目を表示"
     }
   }
 }
